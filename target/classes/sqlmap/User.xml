@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pineit.JSArchive.dao.UserDao">
+
+	<select id="getCatIlBookList" resultType="map">
+		WITH TEMP AS (
+		SELECT A1.ID
+		, A1.REGNO
+		, IFNULL(A1.ASGN_KR, '') AS ASGN_KR
+		, IFNULL(A1.ASGN_JP, '') AS ASGN_JP
+		, IFNULL(A1.ASGN_EN, '') AS ASGN_EN
+		, IFNULL(A1.LINKP_KR, '') AS LINKP_KR
+		, IFNULL(A1.LINKP_JP, '') AS LINKP_JP
+		, IFNULL(A1.LINKP_EN, '') AS LINKP_EN
+		, IFNULL(A1.LINKN_KR, '') AS LINKN_KR
+		, IFNULL(A1.LINKN_JP, '') AS LINKN_JP
+		, IFNULL(A1.LINKN_EN, '') AS LINKN_EN
+		, IFNULL(A1.CONT_KR, '') AS CONT_KR
+		, IFNULL(A1.CONT_JP, '') AS CONT_JP
+		, IFNULL(A1.CONT_EN, '') AS CONT_EN
+		, SUBSTRING_INDEX(REGNO, '-', 1) AS SPLIT1
+		, SUBSTRING_INDEX(SUBSTRING_INDEX(REGNO, '-', -2), '-', 1) AS SPLIT2
+		, CONVERT(SUBSTRING_INDEX(REGNO, '-', -1), UNSIGNED) AS SPLIT3
+		, A1.NTL_FROM
+		, A1.TRANGE
+		FROM ILBOOK A1
+		<where>
+			<if test='findWord != ""'>
+				<if test='CATEGORY != null and CATEGORY != ""'>
+					AND (A1.CONT_KR LIKE CONCAT('%',#{findWord},'%') or A1.CONT_JP LIKE CONCAT('%',#{findWord},'%') or A1.CONT_EN LIKE CONCAT('%',#{findWord},'%')
+					or A1.ASGN_KR LIKE CONCAT('%',#{findWord},'%') or A1.ASGN_JP LIKE CONCAT('%',#{findWord},'%') or A1.ASGN_EN LIKE CONCAT('%',#{findWord},'%'))
+					AND CATEGORY = #{CATEGORY}
+				</if>
+				<if test='NTL_FROM != null and NTL_FROM != ""'>
+					AND (A1.CONT_KR LIKE CONCAT('%',#{findWord},'%') or A1.CONT_JP LIKE CONCAT('%',#{findWord},'%') or A1.CONT_EN LIKE CONCAT('%',#{findWord},'%')
+					or A1.ASGN_KR LIKE CONCAT('%',#{findWord},'%') or A1.ASGN_JP LIKE CONCAT('%',#{findWord},'%') or A1.ASGN_EN LIKE CONCAT('%',#{findWord},'%'))
+					AND NTL_FROM = #{NTL_FROM}
+				</if>
+				<if test='FORM_KR != null and FORM_KR != ""'>
+					AND (A1.CONT_KR LIKE CONCAT('%',#{findWord},'%') or A1.CONT_JP LIKE CONCAT('%',#{findWord},'%') or A1.CONT_EN LIKE CONCAT('%',#{findWord},'%')
+					or A1.ASGN_KR LIKE CONCAT('%',#{findWord},'%') or A1.ASGN_JP LIKE CONCAT('%',#{findWord},'%') or A1.ASGN_EN LIKE CONCAT('%',#{findWord},'%'))
+					AND FORM_KR = #{FORM_KR}
+				</if>
+				<if test='TRANGE != null and TRANGE != "" and TRANGE == "1607"'>
+					AND A1.CONT_KR LIKE CONCAT('%',#{findWord},'%') or A1.CONT_JP LIKE CONCAT('%',#{findWord},'%') or A1.CONT_EN LIKE CONCAT('%',#{findWord},'%')
+					or A1.ASGN_KR LIKE CONCAT('%',#{findWord},'%') or A1.ASGN_JP LIKE CONCAT('%',#{findWord},'%') or A1.ASGN_EN LIKE CONCAT('%',#{findWord},'%')
+					AND ((TRANGE &gt;= '1606' AND TRANGE &lt;= '1637') OR TRANGE = '17세기' OR TRANGE = '1598~1841' OR TRANGE = '1607-1617' OR TRANGE = '1617-1643' OR TRANGE = '1636-1643')
+				</if>
+				<if test='TRANGE != null and TRANGE != "" and TRANGE == "1643"'>
+					AND A1.CONT_KR LIKE CONCAT('%',#{findWord},'%') or A1.CONT_JP LIKE CONCAT('%',#{findWord},'%') or A1.CONT_EN LIKE CONCAT('%',#{findWord},'%')
+					or A1.ASGN_KR LIKE CONCAT('%',#{findWord},'%') or A1.ASGN_JP LIKE CONCAT('%',#{findWord},'%') or A1.ASGN_EN LIKE CONCAT('%',#{findWord},'%')
+					AND ((TRANGE &gt;= '1642' AND TRANGE &lt;= '1712') OR TRANGE = '1598~1841' OR TRANGE = '1640년대' OR TRANGE = '17세기' OR TRANGE = '18세기' OR TRANGE = '1598~1841' OR TRANGE = '1636-1643' OR TRANGE = '1641~1811' OR TRANGE = '1643-1711' OR TRANGE = '1643-1764' OR TRANGE = '1711-1748')
+				</if>
+				<if test='TRANGE != null and TRANGE != "" and TRANGE == "1719"'>
+					AND A1.CONT_KR LIKE CONCAT('%',#{findWord},'%') or A1.CONT_JP LIKE CONCAT('%',#{findWord},'%') or A1.CONT_EN LIKE CONCAT('%',#{findWord},'%')
+					or A1.ASGN_KR LIKE CONCAT('%',#{findWord},'%') or A1.ASGN_JP LIKE CONCAT('%',#{findWord},'%') or A1.ASGN_EN LIKE CONCAT('%',#{findWord},'%')
+					AND ((TRANGE &gt;= '1718' AND TRANGE &lt;= '1825') OR TRANGE = '1598~1841' OR TRANGE = '18세기' OR TRANGE = '19세기' OR TRANGE = '1598~1841' OR TRANGE = '1641~1811'  OR TRANGE = '1643-1764' OR TRANGE = '1711-1748' OR TRANGE = '1748-1764' OR TRANGE = '1763-1764')
+				</if>
+				<if test='TRANGE != null and TRANGE != "" and TRANGE == "제작연도 미상"'>
+					AND A1.CONT_KR LIKE CONCAT('%',#{findWord},'%') or A1.CONT_JP LIKE CONCAT('%',#{findWord},'%') or A1.CONT_EN LIKE CONCAT('%',#{findWord},'%')
+					or A1.ASGN_KR LIKE CONCAT('%',#{findWord},'%') or A1.ASGN_JP LIKE CONCAT('%',#{findWord},'%') or A1.ASGN_EN LIKE CONCAT('%',#{findWord},'%')
+					AND TRANGE = '제작연도 미상'
+				</if>
+				<if test='ACQ_KR != null and ACQ_KR != ""'>
+					AND (A1.CONT_KR LIKE CONCAT('%',#{findWord},'%') or A1.CONT_JP LIKE CONCAT('%',#{findWord},'%') or A1.CONT_EN LIKE CONCAT('%',#{findWord},'%')
+					or A1.ASGN_KR LIKE CONCAT('%',#{findWord},'%') or A1.ASGN_JP LIKE CONCAT('%',#{findWord},'%') or A1.ASGN_EN LIKE CONCAT('%',#{findWord},'%'))
+					AND ACQ_KR LIKE CONCAT('%',#{ACQ_KR},'%')
+				</if>
+
+				
+			</if>
+			<if test='findWord == ""'>
+				<if test='CATEGORY != null and CATEGORY != ""'>
+					AND CATEGORY = #{CATEGORY}
+				</if>
+				<if test='NTL_FROM != null and NTL_FROM != ""'>
+					AND NTL_FROM = #{NTL_FROM}
+				</if>
+				<if test='FORM_KR != null and FORM_KR != ""'>
+					AND FORM_KR = #{FORM_KR}
+				</if>
+				<if test='TRANGE != null and TRANGE != "" and TRANGE == "1607"'>
+					AND (TRANGE &gt;= '1606' AND TRANGE &lt;= '1637') OR TRANGE = '17세기' OR TRANGE = '1598~1841' OR TRANGE = '1607-1617' OR TRANGE = '1617-1643' OR TRANGE = '1636-1643'
+				</if>
+				<if test='TRANGE != null and TRANGE != "" and TRANGE == "1643"'>
+					AND (TRANGE &gt;= '1642' AND TRANGE &lt;= '1712') OR TRANGE = '1640년대' OR TRANGE = '17세기' OR TRANGE = '18세기' OR TRANGE = '1641~1811' OR TRANGE = '1643-1711' OR TRANGE = '1643-1764' OR TRANGE = '1711-1748'
+				</if>
+				<if test='TRANGE != null and TRANGE != "" and TRANGE == "1719"'>
+					AND (TRANGE &gt;= '1718' AND TRANGE &lt;= '1825') OR TRANGE = '18세기' OR TRANGE = '19세기' OR TRANGE = '1748-1764' OR TRANGE = '1763-1764'
+				</if>
+				<if test='TRANGE != null and TRANGE != "" and TRANGE == "제작연도 미상"'>
+					AND TRANGE = '제작연도 미상'
+				</if>
+				<if test='ACQ_KR != null and ACQ_KR != ""'>
+					AND ACQ_KR LIKE CONCAT('%',#{ACQ_KR},'%')
+				</if>
+			</if>
+		</where>
+		)
+		SELECT *
+		, (SELECT COUNT(*) FROM TEMP) AS CNT
+		FROM TEMP
+		<if test='TRANGE != null and TRANGE != ""'>
+			ORDER BY 18 DESC, 19 ASC, 15, 16, 17 ASC LIMIT 10 OFFSET #{pageNum}
+		</if>	
+		
+		<if test='TRANGE == null or TRANGE == ""'>
+			ORDER BY 18 DESC, 15, 16, 17 ASC LIMIT 10 OFFSET #{pageNum}
+		</if>	
+		
+	</select>
+
+
+	<select id="getSearchArchive" resultType="map">
+		WITH TEMP AS (
+		SELECT A1.ID
+			, A1.REGNO
+			, IFNULL(A1.ASGN_KR, '') AS ASGN_KR
+			, IFNULL(A1.ASGN_JP, '') AS ASGN_JP
+			, IFNULL(A1.ASGN_EN, '') AS ASGN_EN
+			, IFNULL(A1.LINKP_KR, '') AS LINKP_KR
+			, IFNULL(A1.LINKP_JP, '') AS LINKP_JP
+			, IFNULL(A1.LINKP_EN, '') AS LINKP_EN
+			, IFNULL(A1.LINKN_KR, '') AS LINKN_KR
+			, IFNULL(A1.LINKN_JP, '') AS LINKN_JP
+			, IFNULL(A1.LINKN_EN, '') AS LINKN_EN
+			, IFNULL(A1.CONT_KR, '') AS CONT_KR
+			, IFNULL(A1.CONT_JP, '') AS CONT_JP
+			, IFNULL(A1.CONT_EN, '') AS CONT_EN
+			, IFNULL(B1.FILURL, '') as FILURL
+			, SUBSTRING_INDEX(REGNO, '-', 1) AS SPLIT1
+			, SUBSTRING_INDEX(SUBSTRING_INDEX(REGNO, '-', -2), '-', 1) AS SPLIT2
+			, CONVERT(SUBSTRING_INDEX(REGNO, '-', -1), UNSIGNED) AS SPLIT3
+			, A1.NTL_FROM
+		FROM ILBOOK A1
+		LEFT JOIN TB_FILE_ILBOOK B1
+		ON A1.ID = B1.ID AND B1.LANG = #{LANG}
+		<where>
+			<if test='findObj != "" and findWord != ""'>
+				<if test='findObj == "all" and findWord != ""'>
+					A1.CONT_KR LIKE CONCAT('%',#{findWord},'%') or A1.CONT_JP LIKE CONCAT('%',#{findWord},'%') or A1.CONT_EN LIKE CONCAT('%',#{findWord},'%')
+					or A1.ASGN_KR LIKE CONCAT('%',#{findWord},'%') or A1.ASGN_JP LIKE CONCAT('%',#{findWord},'%') or A1.ASGN_EN LIKE CONCAT('%',#{findWord},'%')
+				</if>
+				<if test='findObj == "title" and findWord != ""'>
+					A1.ASGN_KR LIKE CONCAT('%',#{findWord},'%') or A1.ASGN_JP LIKE CONCAT('%',#{findWord},'%') or A1.ASGN_EN LIKE CONCAT('%',#{findWord},'%')
+				</if>
+				<if test='findObj == "content" and findWord != ""'>
+					A1.CONT_KR LIKE CONCAT('%',#{findWord},'%') or A1.CONT_JP LIKE CONCAT('%',#{findWord},'%') or A1.CONT_EN LIKE CONCAT('%',#{findWord},'%')
+				</if>
+			</if>
+		</where>
+		)
+		SELECT *
+		, (SELECT COUNT(*) FROM TEMP) AS CNT
+		FROM TEMP
+		ORDER BY 19 DESC, 16,17,18 ASC LIMIT 10 OFFSET #{pageNum}
+	</select>
+
+</mapper>

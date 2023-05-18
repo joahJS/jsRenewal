@@ -1,0 +1,1 @@
+﻿var textForPages = ["","Bajosai Zukan","","","",""]; var positionForPages = [];

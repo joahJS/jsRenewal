@@ -1,0 +1,160 @@
+/*digital.css*/
+
+.digital-img {
+    background-image: url(/common/img/main_subject_back2.jpg);
+}
+
+//컨텐츠 영역
+
+#digital-content {
+    margin: 4.7rem;
+
+}
+
+#digital-content-inner {
+
+    width: 1024px;
+    margin: 0 auto;
+
+}
+
+.digital-content-title {
+    font-size: var(--font28);
+    color: rgba(var(--royalblue), 1);
+    font-weight: bold;
+    display: flex;
+    align-items: baseline;
+}
+
+.Small-font {
+    font-size: var(--font16);
+    font-weight: normal;
+    padding-left: .25rem;
+}
+
+.digital-content-box {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+//이미지 영역
+
+.digital-content-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-basis: 70%;
+}
+
+.digital-content-img {
+    width: 13.5rem;
+    height: 17.2rem;
+    background-color: rgba(var(--black), .1); //임시 삭제할것
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding:.25rem;
+    }
+}
+
+// text영역
+.digital-title {
+    font-size: var(--font20);
+    font-weight: bold;
+    padding-top: 1.1rem;
+    word-break:break-all;
+}
+
+.digital-subTitle {
+    font-size: var(--font18);
+    font-weight: bold;
+    color: rgba(var(--black), .65);
+}
+
+.digital-data-list {
+    li {
+        color: rgba(var(--black), .65);
+        line-height: 1.5;
+        display: flex;
+        gap: .2rem;
+
+        &::before {
+            content: '- ';
+            color: rgba(var(--black), .65);
+        }
+    }
+
+    button {
+        width: 11.25rem;
+        margin-top: 2.5rem;
+    }
+}
+
+
+/*digital.css media*/
+
+@media (max-width: 1079px) {}
+
+@media (max-width: 1023px) {
+    #digital-content-inner {
+        width: 100%;
+        padding: .5rem;
+    }
+
+
+
+}
+
+@media (max-width: 767px) {
+
+    #digital-content {
+        margin: 2rem 0;
+    }
+
+    .digital-content-title {
+        font-size: var(--font18);
+    }
+
+    .digital-content-box {
+        gap: 0.5rem;
+        margin-top: 2rem;
+    }
+}
+
+
+@media (max-width: 479px) {
+
+
+    .digital-content-img {
+        width: 8rem;
+        height: 10.5rem;
+    }
+
+    .digital-title {
+        font-size: var(--font16);
+        padding-top: 0;
+    }
+
+    .digital-subTitle {
+        font-size: var(--font14);
+        margin-top: .25rem;
+    }
+
+    .digital-content-list {
+        ul {
+            font-size: var(--font14);
+            max-height: 4.2rem;
+            overflow: hidden;
+        }
+    }
+
+    .Small-font {
+        font-size: var(--font13);
+    }
+}
+

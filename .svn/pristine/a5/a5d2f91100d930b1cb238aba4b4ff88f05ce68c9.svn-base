@@ -1,0 +1,42 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
+<%@ include file="/WEB-INF/views/user/page/btmSlider.jsp" %>
+    <footer>
+        <div class="web-common-inner">
+            <img src="/common/img/logo_bscf.svg" alt="">
+            <section class="footer-text-side">
+                <p>
+                    <span data-lang-type="kr">48543 부산광역시 동구 자성로 99 (범일동 380-4) 조선통신사역사관</span>
+                    <span data-lang-type="jp">48543釜山広域市東区磁城路99 (汎日洞380-4) 朝鮮通信使歴史館</span>
+                    <span data-lang-type="en">99, Jaseong-ro, Dong-gu, Busan, JOSEON TONGSINSA History Museum</span>
+                </p>
+                <p class="footer-text-bold">TEL : 051-631-0858 / FAX : 051-631-0859</p>
+                <p>Copyrights by 조선통신사문화사업. All right reserved.</p>
+            </section>
+            <section class="footer-login-side">
+            	<sec:authorize access="isAnonymous()"> 
+	                <!-- <button class="footer-login-button" onclick="location.href='/login/login.do'">
+	                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 14v2a6 6 0 0 0-6 6H4a8 8 0 0 1 8-8zm0-1c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6zm0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm9 6h1v5h-8v-5h1v-1a3 3 0 0 1 6 0v1zm-2 0v-1a1 1 0 0 0-2 0v1h2z" fill="rgba(166,180,196,1)"/></svg>
+	                    <p>관리자 로그인</p>
+	                </button> -->
+                </sec:authorize>
+                <sec:authorize access="isAuthenticated()">
+                	<button class="footer-login-button" onclick="location.href='/admin/adminBookList.do'">
+	                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 10H2V4.003C2 3.449 2.455 3 2.992 3h18.016A.99.99 0 0 1 22 4.003V10h-1v10.001a.996.996 0 0 1-.993.999H3.993A.996.996 0 0 1 3 20.001V10zm16 0H5v9h14v-9zM4 5v3h16V5H4zm5 7h6v2H9v-2z" fill="rgba(166,180,196,1)"/></svg>
+	                    <p>관리자페이지</p>
+	                </button>
+                	<button class="footer-login-button" onclick="document.getElementById('logout').submit();">
+	                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill="none" d="M0 0h24v24H0z"/><path d="M4 18h2v2h12V4H6v2H4V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3zm2-7h7v2H6v3l-5-4 5-4v3z" fill="rgba(166,180,196,1)"/></svg>
+	                    <p>로그아웃</p>
+	                </button>
+	                <form id="logout" method="post" action="/login/logout.do" hidden="">
+                        <input name="${_csrf.parameterName}" type="hidden" value="${_csrf.token}">
+                    </form>
+                </sec:authorize>
+            </section>
+            
+        </div>
+    </footer>
+</body>
+</html>

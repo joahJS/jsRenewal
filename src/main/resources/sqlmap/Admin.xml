@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pineit.JSArchive.dao.AdminDao">
+   <select id="getIlBookId" resultType="int">
+      SELECT IFNULL(MAX(ID),0)+1 as ID
+             FROM ILBOOK
+   </select>
+   
+   <insert id="addIlBook">
+       INSERT INTO ILBOOK ( REGNO
+                          , ASGN_KR
+                          , ASGN_JP
+                          , ASGN_EN
+                          , TRANGE
+                          , FORM_KR
+                          , FORM_JP
+                          , FORM_EN
+                          , ACQ_KR
+                          , ACQ_JP
+                          , ACQ_EN
+                          , CATEGORY
+                          , NTL_FROM
+                          , LINKP_KR
+                          , LINKP_JP
+                          , LINKP_EN
+                          , LINKN_KR
+                          , LINKN_JP
+                          , LINKN_EN
+                          , CONT_KR
+                          , CONT_JP
+                          , CONT_EN
+                          , CDATE
+                          , CUSER )
+                  VALUES( #{REGNO}
+                       , #{ASGN_KR}
+                       , #{ASGN_JP}
+                       , #{ASGN_EN}
+                       , #{TRANGE}
+                       , #{FORM_KR}
+                       , #{FORM_JP}
+                       , #{FORM_EN}
+                       , #{ACQ_KR}
+                       , #{ACQ_JP}
+                       , #{ACQ_EN}
+                       , #{CATEGORY}
+                       , #{NTL_FROM}
+                       , #{LINKP_KR}
+                       , #{LINKP_JP}
+                       , #{LINKP_EN}
+                       , #{LINKN_KR}
+                       , #{LINKN_JP}
+                       , #{LINKN_EN}
+                       , #{CONT_KR}
+                       , #{CONT_JP}
+                       , #{CONT_EN}
+                       , now()
+                       , #{USRCD} )
+   </insert>
+   
+   <select id="getIlBookList" resultType="map">
+      SELECT A1.ID 
+            , A1.REGNO 
+            , IFNULL(A1.ASGN_KR, '') AS ASGN_KR 
+            , IFNULL(A1.ASGN_JP, '') AS ASGN_JP
+            , IFNULL(A1.ASGN_EN, '') AS ASGN_EN 
+            , IFNULL(A1.LINKP_KR, '') AS LINKP_KR
+            , IFNULL(A1.LINKP_JP, '') AS LINKP_JP
+            , IFNULL(A1.LINKP_EN, '') AS LINKP_EN
+            , IFNULL(A1.LINKN_KR, '') AS LINKN_KR
+            , IFNULL(A1.LINKN_JP, '') AS LINKN_JP
+            , IFNULL(A1.LINKN_EN, '') AS LINKN_EN
+            , IFNULL(A1.CONT_KR, '') AS CONT_KR
+            , IFNULL(A1.CONT_JP, '') AS CONT_JP
+            , IFNULL(A1.CONT_EN, '') AS CONT_EN
+            , (SELECT COUNT(*) AS CNT FROM ILBOOK) AS CNT
+            , IFNULL(B1.FILURL, '') as FILURL 
+            FROM ILBOOK A1
+            LEFT JOIN TB_FILE_ILBOOK B1
+               ON A1.ID = B1.ID AND B1.LANG = 'kr'
+            ORDER BY A1.ID DESC LIMIT 10 OFFSET #{pageNum}
+   </select>
+   
+   <select id="getIlBookDtl" resultType="map">
+      SELECT A1.ID 
+             , IFNULL(A1.REGNO, '') AS REGNO
+             , IFNULL(A1.ASGN_KR, '') AS ASGN_KR 
+             , IFNULL(A1.ASGN_JP, '') AS ASGN_JP
+             , IFNULL(A1.ASGN_EN, '') AS ASGN_EN 
+             , IFNULL(A1.TRANGE, '') AS TRANGE
+             , IFNULL(A1.FORM_KR, '') AS FORM_KR 
+          , IFNULL(A1.FORM_JP, '') AS FORM_JP 
+          , IFNULL(A1.FORM_EN, '') AS FORM_EN
+          , IFNULL(A1.ACQ_KR, '') AS ACQ_KR 
+          , IFNULL(A1.ACQ_JP, '') AS ACQ_JP 
+          , IFNULL(A1.ACQ_EN, '') AS ACQ_EN 
+          , IFNULL(A1.CATEGORY, '') AS CATEGORY 
+          , IFNULL(A1.NTL_FROM, '') AS NTL_FROM
+             , IFNULL(A1.LINKP_KR, '') AS LINKP_KR
+             , IFNULL(A1.LINKP_JP, '') AS LINKP_JP
+             , IFNULL(A1.LINKP_EN, '') AS LINKP_EN
+             , IFNULL(A1.LINKN_KR, '') AS LINKN_KR
+             , IFNULL(A1.LINKN_JP, '') AS LINKN_JP
+             , IFNULL(A1.LINKN_EN, '') AS LINKN_EN
+             , IFNULL(A1.CONT_KR, '') AS CONT_KR
+             , IFNULL(A1.CONT_JP, '') AS CONT_JP
+             , IFNULL(A1.CONT_EN, '') AS CONT_EN
+             , IFNULL((SELECT B1.FILE_NAME FROM TB_FILE_ILBOOK B1 WHERE A1.ID = B1.ID AND B1.LANG = 'kr'), '') as KRIMGNM
+             , IFNULL((SELECT B1.FILE_NAME FROM TB_FILE_ILBOOK B1 WHERE A1.ID = B1.ID AND B1.LANG = 'jp'), '') as JPIMGNM
+             , IFNULL((SELECT B1.FILE_NAME FROM TB_FILE_ILBOOK B1 WHERE A1.ID = B1.ID AND B1.LANG = 'en'), '') as ENIMGNM
+             FROM ILBOOK A1
+             WHERE A1.ID = #{ID}
+   </select>
+   
+   <update id="udtIlBook">
+      UPDATE ILBOOK
+         SET REGNO = #{REGNO}
+           , ASGN_KR = #{ASGN_KR}
+           , ASGN_JP = #{ASGN_JP}
+           , ASGN_EN = #{ASGN_EN}
+           , TRANGE = #{TRANGE}
+           , FORM_KR = #{FORM_KR}
+           , FORM_JP = #{FORM_JP}
+           , FORM_EN = #{FORM_EN}
+           , ACQ_KR = #{ACQ_KR}
+           , ACQ_JP = #{ACQ_JP}
+           , ACQ_EN = #{ACQ_EN}
+           , CATEGORY = #{CATEGORY}
+           , NTL_FROM = #{NTL_FROM}
+           , LINKP_KR = #{LINKP_KR}
+           , LINKP_JP = #{LINKP_JP}
+           , LINKP_EN = #{LINKP_EN}
+           , LINKN_KR = #{LINKN_KR}
+           , LINKN_JP = #{LINKN_JP}
+           , LINKN_EN = #{LINKN_EN}
+           , CONT_KR = #{CONT_KR}
+           , CONT_JP = #{CONT_JP}
+           , CONT_EN = #{CONT_EN}
+         WHERE ID = #{ID}
+   </update>
+   
+   <select id="getCltDataId" resultType="int">
+      SELECT IFNULL(MAX(ID),0)+1 as ID
+             FROM COLLECT_DATA
+   </select>
+   
+   <insert id="addCltData">
+      INSERT INTO COLLECT_DATA ( REGNO
+                          , ASGN_KR
+                          , ASGN_JP
+                          , ASGN_EN
+                          , TITLE_KR
+                          , TITLE_JP
+                          , TITLE_EN
+                          , TRANGE
+                          , AUTHOR_KR
+                          , AUTHOR_JP
+                          , AUTHOR_EN
+                          , FORM_KR
+                          , FORM_JP
+                          , FORM_EN
+                          , CRAFT_KR
+                          , CRAFT_JP
+                          , CRAFT_EN
+                          , DMN
+                          , ACQ_KR
+                          , ACQ_JP
+                          , ACQ_EN
+                          , IMGLINK
+                          , CATEGORY
+                          , NTL_FROM
+                          , CDATE
+                          , CUSER )
+                  VALUES( #{REGNO}
+                       , #{ASGN_KR}
+                       , #{ASGN_JP}
+                       , #{ASGN_EN}
+                       , #{TITLE_KR}
+                       , #{TITLE_JP}
+                       , #{TITLE_EN}
+                       , #{TRANGE}
+                       , #{AUTHOR_KR}
+                       , #{AUTHOR_JP}
+                       , #{AUTHOR_EN}
+                       , #{FORM_KR}
+                       , #{FORM_JP}
+                       , #{FORM_EN}
+                       , #{CRAFT_KR}
+                       , #{CRAFT_JP}
+                       , #{CRAFT_EN}
+                       , #{DMN}
+                       , #{ACQ_KR}
+                       , #{ACQ_JP}
+                       , #{ACQ_EN}
+                       , #{IMGLINK}
+                       , #{CATEGORY}
+                       , #{NTL_FROM}
+                       , now()
+                       , #{USRCD} )
+   </insert>
+   
+   <select id="getCltDataList" resultType="map">
+      SELECT A1.ID 
+          , IFNULL(A1.REGNO, '') AS REGNO 
+          , IFNULL(A1.ASGN_KR, '') AS ASGN_KR 
+          , IFNULL(A1.ASGN_JP, '') AS ASGN_JP 
+          , IFNULL(A1.ASGN_EN, '') AS ASGN_EN 
+          , IFNULL(A1.TITLE_KR, '') AS TITLE_KR 
+          , IFNULL(A1.TITLE_JP, '') AS TITLE_JP 
+          , IFNULL(A1.TITLE_EN, '') AS TITLE_EN 
+          , IFNULL(A1.TRANGE, '') AS TRANGE 
+          , IFNULL(A1.AUTHOR_KR, '') AS AUTHOR_KR 
+          , IFNULL(A1.AUTHOR_JP, '') AS AUTHOR_JP 
+          , IFNULL(A1.AUTHOR_EN, '') AS AUTHOR_EN 
+          , IFNULL(A1.FORM_KR, '') AS FORM_KR 
+          , IFNULL(A1.FORM_JP, '') AS FORM_JP 
+          , IFNULL(A1.FORM_EN, '') AS FORM_EN 
+          , IFNULL(A1.CRAFT_KR, '') AS CRAFT_KR 
+          , IFNULL(A1.CRAFT_JP, '') AS CRAFT_JP 
+          , IFNULL(A1.CRAFT_EN, '') AS CRAFT_EN 
+          , IFNULL(A1.DMN, '') AS DMN 
+          , IFNULL(A1.ACQ_KR, '') AS ACQ_KR 
+          , IFNULL(A1.ACQ_JP, '') AS ACQ_JP 
+          , IFNULL(A1.ACQ_EN, '') AS ACQ_EN 
+          , IFNULL(A1.IMGLINK, '') AS IMGLINK 
+          , IFNULL(A1.CATEGORY, '') AS CATEGORY 
+          , IFNULL(A1.NTL_FROM, '') AS NTL_FROM 
+          , IFNULL(B1.FILURL, '') AS FILURL
+          , (SELECT COUNT(*) AS CNT FROM COLLECT_DATA) AS CNT
+         FROM COLLECT_DATA A1
+         LEFT JOIN TB_FILE_DATA B1
+            ON A1.ID = B1.ID
+         ORDER BY A1.ID DESC LIMIT 10 OFFSET #{pageNum}
+   </select>
+   
+   <select id="getCltDataDtl" resultType="map">
+      SELECT A1.ID 
+          , IFNULL(A1.REGNO, '') AS REGNO 
+          , IFNULL(A1.ASGN_KR, '') AS ASGN_KR 
+          , IFNULL(A1.ASGN_JP, '') AS ASGN_JP 
+          , IFNULL(A1.ASGN_EN, '') AS ASGN_EN 
+          , IFNULL(A1.TITLE_KR, '') AS TITLE_KR 
+          , IFNULL(A1.TITLE_JP, '') AS TITLE_JP 
+          , IFNULL(A1.TITLE_EN, '') AS TITLE_EN 
+          , IFNULL(A1.TRANGE, '') AS TRANGE 
+          , IFNULL(A1.AUTHOR_KR, '') AS AUTHOR_KR 
+          , IFNULL(A1.AUTHOR_JP, '') AS AUTHOR_JP 
+          , IFNULL(A1.AUTHOR_EN, '') AS AUTHOR_EN 
+          , IFNULL(A1.FORM_KR, '') AS FORM_KR 
+          , IFNULL(A1.FORM_JP, '') AS FORM_JP 
+          , IFNULL(A1.FORM_EN, '') AS FORM_EN 
+          , IFNULL(A1.CRAFT_KR, '') AS CRAFT_KR 
+          , IFNULL(A1.CRAFT_JP, '') AS CRAFT_JP 
+          , IFNULL(A1.CRAFT_EN, '') AS CRAFT_EN 
+          , IFNULL(A1.DMN, '') AS DMN 
+          , IFNULL(A1.ACQ_KR, '') AS ACQ_KR 
+          , IFNULL(A1.ACQ_JP, '') AS ACQ_JP 
+          , IFNULL(A1.ACQ_EN, '') AS ACQ_EN 
+          , IFNULL(A1.IMGLINK, '') AS IMGLINK 
+          , IFNULL(A1.CATEGORY, '') AS CATEGORY 
+          , IFNULL(A1.NTL_FROM, '') AS NTL_FROM 
+          , IFNULL(B1.FILE_NAME , '') AS FILE_NAME
+         FROM COLLECT_DATA A1
+         LEFT JOIN TB_FILE_DATA B1
+            ON A1.ID = B1.ID
+         WHERE A1.ID = #{ID}
+   </select>
+   
+   <update id="udtCltData">
+      UPDATE COLLECT_DATA
+         SET REGNO = #{REGNO}
+           , ASGN_KR = #{ASGN_KR}
+           , ASGN_JP = #{ASGN_JP}
+           , ASGN_EN = #{ASGN_EN}
+           , TITLE_KR = #{TITLE_KR}
+           , TITLE_JP = #{TITLE_JP}
+           , TITLE_EN = #{TITLE_EN}
+           , TRANGE = #{TRANGE}
+           , AUTHOR_KR = #{AUTHOR_KR}
+           , AUTHOR_JP = #{AUTHOR_JP}
+           , AUTHOR_EN = #{AUTHOR_EN}
+           , FORM_KR = #{FORM_KR}
+           , FORM_JP = #{FORM_JP}
+           , FORM_EN = #{FORM_EN}
+           , CRAFT_KR = #{CRAFT_KR}
+           , CRAFT_JP = #{CRAFT_JP}
+           , CRAFT_EN = #{CRAFT_EN}
+           , DMN = #{DMN}
+           , ACQ_KR = #{ACQ_KR}
+           , ACQ_JP = #{ACQ_JP}
+           , ACQ_EN = #{ACQ_EN}
+           , IMGLINK = #{IMGLINK}
+           , CATEGORY = #{CATEGORY}
+           , NTL_FROM = #{NTL_FROM}
+         WHERE ID = #{ID}
+   </update>
+   
+   <delete id="delIlbook">
+      DELETE 
+           FROM ILBOOK
+          WHERE ID = #{ID}
+   </delete>
+</mapper>

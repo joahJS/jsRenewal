@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/*프리텐다드*/
+@font-face {
+  font-family: "PT";
+  font-weight: normal;
+  src: url("/common/font/Pretendard-Regular.woff") format("truetype");
+}
+@font-face {
+  font-family: "PT";
+  font-weight: bold;
+  src: url("/common/font/Pretendard-Bold.woff") format("truetype");
+}
+@font-face {
+  font-family: "PT";
+  font-weight: 100;
+  src: url("/common/font/Pretendard-Light.woff") format("truetype");
+}
+@font-face {
+  font-family: "PT";
+  font-weight: 900;
+  src: url("/common/font/Pretendard-Black.woff") format("truetype");
+}
+/* 영문폰트 - Browallia New */
+@font-face {
+  font-family: "BN";
+  font-weight: normal;
+  src: url("/common/font/browa.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BN";
+  font-weight: bold;
+  src: url("/common/font/browab.ttf") format("truetype");
+}
+body {
+  font-family: var(--PT);
+  font-weight: normal;
+  margin: 0 auto;
+  word-break: keep-all;
+}
+
+button {
+  cursor: pointer;
+}
+
+#backgroundImg {
+  background-image: url(/common/img/back_cloud.png);
+  height: auto;
+}
+
+.web-common-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.web-inner-depth {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.round_btnStyle {
+  background-color: rgba(var(--royalblue), 1);
+  color: rgba(var(--white), 1);
+  border-radius: 25rem;
+  padding: 0.8rem;
+}
+.round_btnStyle:hover {
+  opacity: 0.9;
+}
+
+.Square_btnStyle {
+  background-color: rgba(var(--royalblue), 1);
+  color: rgba(var(--white), 1);
+  border-radius: 0.25rem;
+  padding: 0.8rem;
+}
+
+#back_img {
+  height: 18rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  z-index: -1;
+}
+#back_img #back_img_inner {
+  position: absolute;
+  width: 100%;
+  max-width: 1280px;
+  height: inherit;
+  bottom: 0;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+#back_img h3 {
+  color: rgba(var(--white), 1);
+  font-size: var(--font42);
+  filter: drop-shadow(0px 0px 4px rgba(var(--black), 0.6));
+  top: 64%;
+  position: absolute;
+  right: 15px;
+  transform: translate(0, -50%);
+}
+
+[data-lang-type] {
+  display: none;
+}
+
+[data-lang-type].show {
+  display: -webkit-box;
+}
+
+/* 페이저 */
+[data-board-pager] {
+  margin: 2rem auto 4rem;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.75rem;
+}
+[data-board-pager] a {
+  color: rgba(var(--black), 1);
+}
+[data-board-pager] > * {
+  cursor: pointer;
+  display: flex;
+  gap: 0.5rem;
+}
+[data-board-pager] .button-outta-focus {
+  margin: 0 0.5rem;
+}
+
+#paging li {
+  padding: 0.25rem;
+}
+#paging li.on {
+  background-color: rgba(var(--royalblue), 0.15);
+}
+
+/* common mediaquery */
+@media (max-width: 1024px) {
+  .web-common-inner, .web-inner-depth {
+    width: 100%;
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 767px) {
+  #back_img {
+    height: 14rem;
+  }
+  #back_img #back_img_inner {
+    left: 0;
+    right: 0;
+    text-align: center;
+    transform: none;
+  }
+  #back_img #back_img_inner h3 {
+    font-size: var(--font32);
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+}
+@media (max-width: 479px) {
+  #back_img {
+    height: 10rem;
+  }
+  #back_img #back_img_inner h3 {
+    font-size: var(--font22);
+  }
+  .round_btnStyle {
+    font-size: var(--font14);
+  }
+}

@@ -1,0 +1,146 @@
+/*searchResult.css*/
+
+.sr-img{
+    background-image: url(/common/img/main_subject_back2.jpg) ;
+}
+
+.search-result-notify{
+    margin: 4rem auto 1.5rem auto;
+    font-size: var(--font18);
+    border-bottom: 1px solid rgba(var(--black),.15);
+    padding-bottom: 1rem;
+}
+
+//컨텐츠 영역
+
+#searchResult{
+    margin: 1rem auto;
+
+}
+
+#searchResult-content-inner{
+    width: 1024px;
+    margin: 0 auto;
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+
+    > section{
+        min-height:6rem;
+    }
+}
+
+.searchResult-content-title{
+    font-size: var(--font28);
+    color: rgba(var(--royalblue), 1);
+    font-weight: bold;
+    margin-bottom:1rem;
+}
+
+.searchResult-content-box{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2.5rem;
+    margin-top: 2.5rem ;
+}
+
+//이미지 영역
+
+.searchResult-content-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1;
+
+    >button{
+        max-width: 10rem;
+    }
+
+}
+.searchResult-content-img{
+    width: 13.5rem;
+    height:17.2rem;
+    background-color: rgba(var(--black), .1) ;//임시 삭제할것
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+// text영역
+.searchResult-title{
+
+    font-size: var(--font22);
+    font-weight: 900;
+    padding-top: 1.1rem;
+}
+
+.searchResult-subTitle{
+
+    font-size: var(--font20);
+    font-weight: bold;
+    color: rgba(var(--black), .65);
+}
+
+.searchResult-data-list{
+
+    li{
+        color: rgba(var(--black), .65);
+        line-height: 1.5;
+
+        &::before{
+            content: '- ';
+            color: rgba(var(--black), .65);
+        }
+    }
+
+    button{
+        width: 11.25rem;
+        margin-top: 2.5rem; 
+    }
+}
+
+@media (max-width: 767px) {
+
+    .searchResult-content-title{
+        font-size:var(--font18);
+    }
+}
+
+
+@media (max-width: 500px) {
+    .searchResult-content-box{
+        gap: 0.5rem;
+    }
+
+    .searchResult-content-img{
+        width: 8rem;
+        height: 10.5rem;
+    }
+
+    .searchResult-title{
+        font-size: var(--font16);
+        padding-top: 0;
+    }
+
+    .searchResult-subTitle{
+        font-size: var(--font14);
+        margin-top: 0.25rem;
+    }
+
+    .searchResult-data-list{
+        font-size: var(--font14);
+        max-height: 4.2rem;
+        overflow: hidden;
+
+        li{
+            color: rgba(var(--black), 0.65);
+             line-height: 1.5;
+        }
+    }
+
+
+}
+

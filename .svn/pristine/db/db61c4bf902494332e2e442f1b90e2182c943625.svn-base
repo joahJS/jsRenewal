@@ -1,0 +1,23 @@
+
+//pages
+@import
+    'css/pages/main',
+    'css/pages/digital',
+    'css/pages/login',
+    'css/pages/archive',
+    'css/pages/dataUse',
+    'css/pages/searchArchive',
+    'css/pages/categorical',
+    'css/pages/searchResult',
+    'css/pages/cateResult'
+    ;
+
+    
+//include
+@import
+    'css/include/header',
+    'css/include/totalSearch',
+    'css/include/btmSlider',
+    'css/include/custom_checkbox',
+    'css/include/footer'
+    ;

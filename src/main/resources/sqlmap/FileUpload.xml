@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pineit.JSArchive.dao.FileDao">
+	<insert id="addIlBookFile">
+		INSERT INTO TB_FILE_ILBOOK ( ID
+	   					  	, LANG
+	   					  	, FILE_NAME
+	   					  	, FILE_SAVE_NAME
+	   					  	, SVPATH
+	   					  	, FILURL
+	   					  	, CDATE
+	   					  	, CUSER )
+	   				VALUES( #{ID}
+	   					  , #{LANG}
+	   					  , #{FILE_NAME}
+	   					  , #{FILE_SAVE_NAME}
+	   					  , #{SVPATH}
+	   					  , #{FILURL}
+	   					  , now()
+	   					  , #{USRCD} )
+	</insert>
+	
+	<select id="getFileInfo" resultType="map">
+		SELECT *
+			FROM TB_FILE_ILBOOK
+			WHERE ID = #{ID} AND LANG = #{LANG}
+	</select>
+	
+	<delete id="delIlBookFile">
+		DELETE FROM TB_FILE_ILBOOK
+			WHERE ID = #{ID} AND LANG = #{LANG}
+	</delete>
+	
+	<insert id="addCltDataFile">
+		INSERT INTO TB_FILE_DATA ( ID
+	   					  	, FILE_NAME
+	   					  	, FILE_SAVE_NAME
+	   					  	, SVPATH
+	   					  	, FILURL
+	   					  	, CDATE
+	   					  	, CUSER )
+	   				VALUES( #{ID}
+	   					  , #{FILE_NAME}
+	   					  , #{FILE_SAVE_NAME}
+	   					  , #{SVPATH}
+	   					  , #{FILURL}
+	   					  , now()
+	   					  , #{USRCD} )
+	</insert>
+	
+	<delete id="delCltDataFile">
+		DELETE FROM TB_FILE_DATA
+			WHERE ID = #{ID}
+	</delete>
+	
+	<select id="getFileInfoData" resultType="map">
+		SELECT *
+			FROM TB_FILE_DATA
+			WHERE ID = #{ID}
+	</select>
+	
+</mapper>
