@@ -33,8 +33,8 @@
 
 	    <title>::조선통신사 디지털아카이브::</title>
 	</head>
-	<header id="header">
-	    <section id="headerTop" class="web-common-inner">
+	<header id="header" class="web-common-inner">
+	    
 			<div class="hd-logo-div" onclick="location.href='/'">
 				<img class="mob-logo-img" src="/common/img/logo_w.svg" alt="조선통신사 디지털아카이브 로고">
 				<h2>조선통신사</h2>
@@ -141,7 +141,7 @@
 				<span data-lang-type="jp">仮想展示館</span>
 				<span data-lang-type="en">Virtual Exhibition Hall</span>
 			</button>
-	    </section>
+
 
 	    
 	</header>

@@ -9,25 +9,97 @@
 	<div id="wrap" class="main-wrap-back">
         <section id="mainSearch">
             <article id="mainSearchInner" class="web-common-inner">
-                <div class="total-space"></div>
-                <div class="main-search-title">
+                <div class="main-logo-div">
                     <img src="/common/img/logo_w.svg" alt="조선통신사 디지털아카이브 로고">
-                    <h2 data-lang-type="kr" >조선통신사 <span class="span-block">디지털 아카이브</span></h2>
-                    <h2 data-lang-type="jp" >朝鮮通信使デジタルアーカイブ</h2>
-                    <h2 data-lang-type="en" >Joseon Tongsinsa Digital Archive</h2>
+                    <div>
+                        <h2>
+                            <span data-lang-type="kr">조선통신사</span>
+                            <span data-lang-type="jp">朝鮮通信使</span>
+                            <span data-lang-type="en">Joseon Tongsinsa</span>
+                        </h2>
+                        <p>
+                            <span data-lang-type="kr">Joseon Tongsinsa</span>
+                            <span data-lang-type="jp">Joseon Tongsinsa</span>
+                            <span data-lang-type="en">Joseon Tongsinsa</span>
+                        </p>
+                    </div>
                 </div>
+                <hgroup class="main-search-title">
+                    <p>
+                        <span data-lang-type="kr">Joseon Tongsinsa Digital Archive</span>
+                        <span data-lang-type="jp">Joseon Tongsinsa Digital Archive</span>
+                        <span data-lang-type="en">Joseon Tongsinsa Digital Archive</span>
+                    </p>
+                    <h2>
+                        <span data-lang-type="kr">조선통신사 <span class="span-block">디지털 아카이브</span></span>
+                        <span data-lang-type="jp" >朝鮮通信使デジタルアーカイブ</span>
+                        <span data-lang-type="en" >Joseon Tongsinsa Digital Archive</span>
+                    </h2>
+                </hgroup>
+                <p data-main-title-texts>
+                    <span data-lang-type="kr">부산의 유일한 유네스코 세계기록유산인 조선통신사 기록들을 보관하는 온라인 박물관입니다.</span>
+                    <span data-lang-type="jp">釜山で唯一のユネスコ世界遺産である朝鮮通信使の 記録を保存するオンライン博物館です。</span>
+                    <span data-lang-type="en">It is an online museum that preserves the records of Joseon Tongsinsa, the only UNESCO World Heritage Site in Busan.</span>
+                    
+                </p>
                 <form class="main-search-bar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/></svg>
                     <input type="text" placeholder="Search..." data-main-search-text maxlength="50">
                     <button data-main-search-btn>
                         <p>
-                            <span data-lang-type="kr">찾아보기</span>
+                            <span data-lang-type="kr">Search</span>
                             <span data-lang-type="jp">けんさく</span>
                             <span data-lang-type="en">Search</span>
                         </p>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/></svg>
+                        
                     </button>
                 </form>
             </article>
+        </section>
+        <section id="mainIntro" class="web-common-inner">
+            <div class="main-intro-logo-div">
+                <img src="/common/img/logo_color.svg" alt="조선통신사 디지털아카이브 로고">
+                <div>
+                    <h2>
+                        <span data-lang-type="kr">조선통신사</span>
+                        <span data-lang-type="jp">朝鮮通信使</span>
+                        <span data-lang-type="en">Joseon Tongsinsa</span>
+                    </h2>
+                    <p>
+                        <span data-lang-type="kr">Joseon Tongsinsa</span>
+                        <span data-lang-type="jp">Joseon Tongsinsa</span>
+                        <span data-lang-type="en">Joseon Tongsinsa</span>
+                    </p>
+                </div>
+            </div> 
+            <h2 data-section-head-title>아카이브 안내</h2>
+            <div data-main-intro-texts>
+                <div data-main-intro-item>
+                    <img src="/common/img/main_archive_01.jpg" alt="기록물검색 안내 이미지">
+                    <p class="main-item-subtitle">Part 1.</p>
+                    <h3 class="main-item-title">기록물 검색</h3>
+                    <p data-main-intro-item-text>유네스코 세계기록유산으로 등재된 조선통신사 기록물의 정보를 통합 검색할 수 있습니다.</p>
+                </div>
+                <div data-main-intro-item>
+                    <img src="/common/img/main_archive_02.jpg" alt="기록물해석 안내 이미지">
+                    <p class="main-item-subtitle">Part 2.</p>
+                    <h3 class="main-item-title">기록물 해석</h3>
+                    <p data-main-intro-item-text>사용자의 목적에 맞게 기록물의 정보를 선택할 수 있도록 연구자용(도록)과 일반 해설을 각각 제공합니다.</p>
+                </div>
+                <div data-main-intro-item>
+                    <img src="/common/img/main_archive_03.jpg" alt="디지털소장자료 안내 이미지">
+                    <p class="main-item-subtitle">Part 3.</p>
+                    <h3 class="main-item-title">디지털 소장자료</h3>
+                    <p data-main-intro-item-text>유네스코 세계기록유산으로 등재된 조선통신사 기록물 소장처의 협조를 통해 기록물의 원본 이미지를 제공합니다.</p>
+                </div>
+                <div data-main-intro-item>
+                    <img src="/common/img/main_archive_04.jpg" alt="기록물활용 안내 이미지">
+                    <p class="main-item-subtitle">Part 4.</p>
+                    <h3 class="main-item-title">기록물 활용 콘텐츠</h3>
+                    <p data-main-intro-item-text>음성지원 콘텐츠, 가상 전시 등 조선통신사 기록물을 활용한 콘텐츠를 개발, 제공합니다.</p>
+                </div>
+            </div>
+
         </section>
         <!-- <section id="mainIntro">
             <article id="mainIntroInner" class="web-common-inner">

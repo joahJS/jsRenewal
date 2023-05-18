@@ -128,7 +128,8 @@ button {
 [data-lang-type].show {
   // display: inline-block;
   display: -webkit-box;
-  font-size: var(--ftMain);
+  font-size: inherit;
+  // font-size: var(--ftMain);
   
 }
 
@@ -162,6 +163,10 @@ button {
   &.on {
     background-color: rgba(var(--royalblue), 0.15);
   }
+}
+
+[data-section-head-title] {
+  font-size: var(--ftTitle);
 }
 
 
