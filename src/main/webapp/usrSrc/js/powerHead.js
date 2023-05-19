@@ -21,10 +21,14 @@
 //     });
 // }
 
-const lang = document.getElementById('langSelector'); // id 페이지에 맞게 변경
+// const lang = document.getElementById('langSelector'); // id 페이지에 맞게 변경
+
+const lang = document.querySelectorAll('.lang-select-button');
+
+
 
 const langMobile = document.getElementById('langSelector2')
 
 langSelector(lang);
 
-langSelector2(langMobile);
+// langSelector2(langMobile);

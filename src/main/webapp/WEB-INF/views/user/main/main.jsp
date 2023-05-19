@@ -19,16 +19,16 @@
                         </h2>
                         <p>
                             <span data-lang-type="kr">Joseon Tongsinsa</span>
-                            <span data-lang-type="jp">Joseon Tongsinsa</span>
-                            <span data-lang-type="en">Joseon Tongsinsa</span>
+                            <span data-lang-type="jp">(jp)Joseon Tongsinsa</span>
+                            <span data-lang-type="en">(en)Joseon Tongsinsa</span>
                         </p>
                     </div>
                 </div>
                 <hgroup class="main-search-title">
                     <p>
                         <span data-lang-type="kr">Joseon Tongsinsa Digital Archive</span>
-                        <span data-lang-type="jp">Joseon Tongsinsa Digital Archive</span>
-                        <span data-lang-type="en">Joseon Tongsinsa Digital Archive</span>
+                        <span data-lang-type="jp">(jp)Joseon Tongsinsa Digital Archive</span>
+                        <span data-lang-type="en">(en)Joseon Tongsinsa Digital Archive</span>
                     </p>
                     <h2>
                         <span data-lang-type="kr">조선통신사 <span class="span-block">디지털 아카이브</span></span>
@@ -67,109 +67,261 @@
                     </h2>
                     <p>
                         <span data-lang-type="kr">Joseon Tongsinsa</span>
-                        <span data-lang-type="jp">Joseon Tongsinsa</span>
-                        <span data-lang-type="en">Joseon Tongsinsa</span>
+                        <span data-lang-type="jp">(jp)Joseon Tongsinsa</span>
+                        <span data-lang-type="en">(en)Joseon Tongsinsa</span>
                     </p>
                 </div>
             </div> 
-            <h2 data-section-head-title>아카이브 안내</h2>
+            <h2 data-section-head-title>
+                <span data-lang-type="kr">아카이브 안내</span>
+                <span data-lang-type="jp">(jp)아카이브 안내</span>
+                <span data-lang-type="en">(en)아카이브 안내</span>
+            </h2>
             <div data-main-intro-texts>
                 <div data-main-intro-item>
                     <img src="/common/img/main_archive_01.jpg" alt="기록물검색 안내 이미지">
                     <p class="main-item-subtitle">Part 1.</p>
-                    <h3 class="main-item-title">기록물 검색</h3>
-                    <p data-main-intro-item-text>유네스코 세계기록유산으로 등재된 조선통신사 기록물의 정보를 통합 검색할 수 있습니다.</p>
+                    <h3 class="main-item-title">
+                        <span data-lang-type="kr">기록물 검색</span>
+                        <span data-lang-type="jp">(jp)기록물 검색</span>
+                        <span data-lang-type="en">(en)기록물 검색</span>
+                    </h3>
+                    <p data-main-intro-item-text>
+                        <span data-lang-type="kr">유네스코 세계기록유산으로 등재된 조선통신사 기록물의 정보를 통합 검색할 수 있습니다.</span>
+                        <span data-lang-type="jp">(jp)유네스코 세계기록유산으로 등재된 조선통신사 기록물의 정보를 통합 검색할 수 있습니다.</span>
+                        <span data-lang-type="en">(en)유네스코 세계기록유산으로 등재된 조선통신사 기록물의 정보를 통합 검색할 수 있습니다.</span>
+                    </p>
                 </div>
                 <div data-main-intro-item>
                     <img src="/common/img/main_archive_02.jpg" alt="기록물해석 안내 이미지">
                     <p class="main-item-subtitle">Part 2.</p>
-                    <h3 class="main-item-title">기록물 해석</h3>
-                    <p data-main-intro-item-text>사용자의 목적에 맞게 기록물의 정보를 선택할 수 있도록 연구자용(도록)과 일반 해설을 각각 제공합니다.</p>
+                    <h3 class="main-item-title">
+                        <span data-lang-type="kr">기록물 해석</span>
+                        <span data-lang-type="jp">(jp)기록물 해석</span>
+                        <span data-lang-type="en">(en)기록물 해석</span>
+                    </h3>
+                    <p data-main-intro-item-text>
+                        <span data-lang-type="kr">사용자의 목적에 맞게 기록물의 정보를 선택할 수 있도록 연구자용(도록)과 일반 해설을 각각 제공합니다.</span>
+                        <span data-lang-type="jp">(jp)사용자의 목적에 맞게 기록물의 정보를 선택할 수 있도록 연구자용(도록)과 일반 해설을 각각 제공합니다.</span>
+                        <span data-lang-type="en">(en)사용자의 목적에 맞게 기록물의 정보를 선택할 수 있도록 연구자용(도록)과 일반 해설을 각각 제공합니다.</span>
+                    </p>
                 </div>
                 <div data-main-intro-item>
                     <img src="/common/img/main_archive_03.jpg" alt="디지털소장자료 안내 이미지">
                     <p class="main-item-subtitle">Part 3.</p>
-                    <h3 class="main-item-title">디지털 소장자료</h3>
-                    <p data-main-intro-item-text>유네스코 세계기록유산으로 등재된 조선통신사 기록물 소장처의 협조를 통해 기록물의 원본 이미지를 제공합니다.</p>
+                    <h3 class="main-item-title">
+                        <span data-lang-type="kr">디지털 소장자료</span>
+                        <span data-lang-type="jp">(jp)디지털 소장자료</span>
+                        <span data-lang-type="en">(en)디지털 소장자료</span>
+                    </h3>
+                    <p data-main-intro-item-text>
+                        <span data-lang-type="kr">유네스코 세계기록유산으로 등재된 조선통신사 기록물 소장처의 협조를 통해 기록물의 원본 이미지를 제공합니다.</span>
+                        <span data-lang-type="jp">(jp)유네스코 세계기록유산으로 등재된 조선통신사 기록물 소장처의 협조를 통해 기록물의 원본 이미지를 제공합니다.</span>
+                        <span data-lang-type="en">(en)유네스코 세계기록유산으로 등재된 조선통신사 기록물 소장처의 협조를 통해 기록물의 원본 이미지를 제공합니다.</span>
+                    </p>
                 </div>
                 <div data-main-intro-item>
                     <img src="/common/img/main_archive_04.jpg" alt="기록물활용 안내 이미지">
                     <p class="main-item-subtitle">Part 4.</p>
-                    <h3 class="main-item-title">기록물 활용 콘텐츠</h3>
-                    <p data-main-intro-item-text>음성지원 콘텐츠, 가상 전시 등 조선통신사 기록물을 활용한 콘텐츠를 개발, 제공합니다.</p>
+                    <h3 class="main-item-title">
+                        <span data-lang-type="kr">기록물 활용 콘텐츠</span>
+                        <span data-lang-type="jp">(jp)기록물 활용 콘텐츠</span>
+                        <span data-lang-type="en">(en)기록물 활용 콘텐츠</span>
+                    </h3>
+                    <p data-main-intro-item-text>
+                        <span data-lang-type="kr">음성지원 콘텐츠, 가상 전시 등 조선통신사 기록물을 활용한 콘텐츠를 개발, 제공합니다.</span>
+                        <span data-lang-type="jp">(jp)음성지원 콘텐츠, 가상 전시 등 조선통신사 기록물을 활용한 콘텐츠를 개발, 제공합니다.</span>
+                        <span data-lang-type="en">(en)음성지원 콘텐츠, 가상 전시 등 조선통신사 기록물을 활용한 콘텐츠를 개발, 제공합니다.</span>
+                    </p>
                 </div>
             </div>
 
         </section>
-        <!-- <section id="mainIntro">
-            <article id="mainIntroInner" class="web-common-inner">
-                <div class="main-intro-left">
-                    
-                    <h2>
-                        <span data-lang-type="kr">조선통신사 디지털 아카이브</span>
-                        <span data-lang-type="jp">朝鮮通信使デジタルアーカイブ</span>
-                        <span data-lang-type="en">Joseon Tongsinsa Digital Archive</span>
-                    </h2>
-                    <P>
-                        <span data-lang-type="kr">부산의 유일한 유네스코 세계기록유산인 </span>
-                        <span data-lang-type="jp">釜山で唯一のユネスコ世界遺産である朝鮮通信使の</span>
-                        <span data-lang-type="en">It is an online museum that preserves the records of Joseon Tongsinsa,</span>
-                    </P>
-                    <p>
-                        <span data-lang-type="kr">조선통신사 기록물을 보관하는</span>
-                        <span data-lang-type="jp">記録を保存するオンライン博物館です。</span>
-                        <span data-lang-type="en">the only UNESCO World Heritage Site in Busan. </span>
-                    </p>
-                    <p>
-                        <span data-lang-type="kr">온라인 박물관입니다.</span>
-                       </p>
-                </div>
-                <div class="vt-line"></div>
-                <div class="main-intro-right">
-                    
-                    <h2>
-                        <span data-lang-type="kr">유네스코 세계문화유산</span>
-                        <span data-lang-type="jp">ユネスコの世界遺産</span>
-                        <span data-lang-type="en">UNESCO World Heritage</span>
-                    </h2>
-                    <p>2017年10月31日</p>
-                    <p>
-                        <span data-lang-type="kr">200여년간 이어진 한일 교류의 상징</span>
-                        <span data-lang-type="jp">200年以上続いた韓日交流の象徴</span>
-                        <span data-lang-type="en">A symbol of Korea-Japan exchange that lasted for over 200 years</span>
-                    </p>
-                    <P>
-                        <span data-lang-type="kr">조선통신사 기록물 유네스코 등재</span>
-                        <span data-lang-type="jp">ユネスコのリストに記載されている朝鮮通信使の記録</span>
-                        <span data-lang-type="en">Joseon Tongsinsa records listed on the UNESCO list
-                        </span>
-                    </P>
+       
+        <!-- 분류별 기록물 -->
+        <section id="mainSubj">
+            <article id="mainSubjInner" class="web-common-inner">
+                <h2 data-section-head-title>
+                    <span data-lang-type="kr">분류별 기록물</span>
+                    <span data-lang-type="jp">分類別記録</span>
+                    <span data-lang-type="en">Records by Classification</span>
+                </h2>
+                <div class="main-subj-texts">
+                    <!-- 등재구분별 -->
+                    <ul data-subj-list>
+                        <li data-subj-subtitle>
+                            <span data-lang-type="kr">등재구분별</span>
+                            <span data-lang-type="jp">登録区分</span>
+                            <span data-lang-type="en">Classification of registration</span>
+                        </li>
+                        <li data-subj-item>
+                            <span data-lang-type="kr">외교기록</span>
+                            <span data-lang-type="jp">外交記録</span>
+                            <span data-lang-type="en">diplomatic record</span>
+                        </li>
+                        <li data-subj-item>
+                            <span data-lang-type="kr">여정의 기록</span>
+                            <span data-lang-type="jp">旅の記録</span>
+                            <span data-lang-type="en">record of the journey</span>
+                        </li>
+                        <li data-subj-item>
+                            <span data-lang-type="kr">문화교류의 기록</span>
+                            <span data-lang-type="jp">文化交流の記録</span>
+                            <span data-lang-type="en">Records of cultural exchange</span>
+                        </li>
+                    </ul>
+
+                    <!-- 제작시기별 -->
+                    <ul data-subj-list>
+                        <li data-subj-subtitle>
+                            <span data-lang-type="kr">제작시기별</span>
+                            <span data-lang-type="jp">生産時期別</span>
+                            <span data-lang-type="en">By production period</span>
+                        </li>
+                        <li data-subj-item>
+                            <span data-lang-type="kr">1607~1636</span>
+                            <span data-lang-type="jp">1607~1636</span>
+                            <span data-lang-type="en">1607~1636</span>
+                        </li>
+                        <li data-subj-item>
+                            <span data-lang-type="kr">1643~1711</span>
+                            <span data-lang-type="jp">1643~1711</span>
+                            <span data-lang-type="en">1643~1711</span>
+                        </li>
+                        <li data-subj-item>
+                            <span data-lang-type="kr">1719~1811</span>
+                            <span data-lang-type="jp">1719~1811</span>
+                            <span data-lang-type="en">1719~1811</span>
+                        </li>
+                        <li data-subj-item>
+                            <span data-lang-type="kr">제작연도 미상</span>
+                            <span data-lang-type="jp">製造年不明</span>
+                            <span data-lang-type="en">Production year unknown</span>
+                        </li>
+                    </ul>
+
+                    <!-- 소장국가별 -->
+                    <ul data-subj-list>
+                        <li data-subj-subtitle>
+                            <span data-lang-type="kr">소장국가별</span>
+                            <span data-lang-type="jp">収集国別</span>
+                            <span data-lang-type="en">by country of collection</span>
+                        </li>
+                        <li data-subj-item>
+                            <span data-lang-type="kr">한국</span>
+                            <span data-lang-type="jp">韓国</span>
+                            <span data-lang-type="en">Korea</span>
+                        </li>
+                        <li data-subj-item>
+                            <span data-lang-type="kr">일본</span>
+                            <span data-lang-type="jp">日本</span>
+                            <span data-lang-type="en">Japan</span>
+                        </li>
+                    </ul>
+
+                    <!-- 소장처별 -->
+                    <ul data-subj-list>
+                        <li data-subj-subtitle>
+                            <span data-lang-type="kr">소장처별</span>
+                            <span data-lang-type="jp">コレクション</span>
+                            <span data-lang-type="en">collection</span>
+                        </li>
+                        <li data-subj-item>
+                            <span data-lang-type="kr">한국</span>
+                            <span data-lang-type="jp">韓国</span>
+                            <span data-lang-type="en">Korea</span>
+                        </li>
+                        <li data-subj-item>
+                            <span data-lang-type="kr">일본</span>
+                            <span data-lang-type="jp">日本</span>
+                            <span data-lang-type="en">Japan</span>
+                        </li>
+                    </ul>
+
+                    <!-- 형태별 -->
+                    <ul data-subj-list>
+                        <li data-subj-subtitle>
+                            <span data-lang-type="kr">형태별</span>
+                            <span data-lang-type="jp">種類別</span>
+                            <span data-lang-type="en">by type of record</span>
+                        </li>
+                        <li data-subj-item>
+                            <span data-lang-type="kr">책자</span>
+                            <span data-lang-type="jp">本</span>
+                            <span data-lang-type="en">book</span>
+                        </li>
+                        <li data-subj-item>
+                            <span data-lang-type="kr">서화(글)</span>
+                            <span data-lang-type="jp">書道・絵画 (執筆)</span>
+                            <span data-lang-type="en">Calligraphy and painting (writing)</span>
+                        </li>
+                        <li data-subj-item>
+                            <span data-lang-type="kr">서화(그림)</span>
+                            <span data-lang-type="jp">書道と絵画 (絵画)</span>
+                            <span data-lang-type="en">Calligraphy and painting (painting)</span>
+                        </li>
+                    </ul>
+
                 </div>
             </article>
-            
-        </section> -->
- 
-        <section id="mainCollection">
+        </section>
+
+        <!-- 분류별 기록물 모바일 슬라이드 -->
+        <section id="mainSubjMob">
+            <article id="mainSubjInnerMob" class="web-common-inner">
+                <h2 data-section-head-title>
+                    <span data-lang-type="kr">분류별 기록물</span>
+                    <span data-lang-type="jp">分類別記録</span>
+                    <span data-lang-type="en">Records by Classification</span>
+                </h2>
+                <div class="main-subj-texts-mob swiper-wrapper">
+                    <!-- 등재구분별 -->
+                    <div class="swiper-slide">
+                        <ul data-subj-list-mob>
+                            <li data-subj-subtitle-mob>
+                                <span data-lang-type="kr">등재구분별</span>
+                                <span data-lang-type="jp">登録区分</span>
+                                <span data-lang-type="en">Classification of registration</span>
+                            </li>
+                            <li data-subj-item-mob>
+                                <span data-lang-type="kr">외교기록</span>
+                                <span data-lang-type="jp">外交記録</span>
+                                <span data-lang-type="en">diplomatic record</span>
+                            </li>
+                            <li data-subj-item-mob>
+                                <span data-lang-type="kr">여정의 기록</span>
+                                <span data-lang-type="jp">旅の記録</span>
+                                <span data-lang-type="en">record of the journey</span>
+                            </li>
+                            <li data-subj-item-mob>
+                                <span data-lang-type="kr">문화교류의 기록</span>
+                                <span data-lang-type="jp">文化交流の記録</span>
+                                <span data-lang-type="en">Records of cultural exchange</span>
+                            </li>
+                        </ul>                    
+                    </div>
+                </div>
+            </article>
+         
+        </section>
+        
+
+        <!-- 구 디지털 소장자료 -->
+        <!-- <section id="mainCollection">
             <article id="mainCollInner" class="web-common-inner">
-                <hr>
+                
                 <h3>
                     <span data-lang-type="kr">디지털 소장자료</span>
-                    <span data-lang-type="jp">デジタルコレクション</span>
-                    <span data-lang-type="en">Digital collection</span>
+                    <span data-lang-type="jp">(jp)デジタルコレクション</span>
+                    <span data-lang-type="en">(en)Digital collection</span>
                 </h3>
-                <div class="main-more-button" onclick="location.href='digital.do'">
-                    <span data-lang-type="kr">더보기</span>
-                    <span data-lang-type="jp">もっと見る</span>
-                    <span data-lang-type="en">MORE</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 12l-6 6V6z"/></svg>
-                </div>
             </article>
             <article id="mainCollBottom">
                 <div class="main-coll-slider">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper">-->
                          <!--반복문 시작-->
                         <!--반복문 끝-->
-                    </div>
+                    <!-- </div>
                 </div>
                 <div class="main-coll-slider-buttons">
                     <button class="main-slider-prev"></button>
@@ -177,149 +329,194 @@
                     <button class="main-slider-next"></button>
                	</div>
             </article>
-        </section>
+        </section> --> 
 
-        <section id="mainSubject">
-            <article id="mainSubjectInner" class="web-common-inner">
-                <hr>
-                <h3>
-                    <span data-lang-type="kr">분류별 기록물</span>
-                    <span data-lang-type="jp">分類別記録</span>
-                    <span data-lang-type="en">Records by Classification</span>
+        <!-- 디지털 소장자료 -->
+        <section id="mainDigital">
+            <div class="web-common-inner">
+                <h3 data-section-head-title>
+                    <span data-lang-type="kr">디지털 소장자료</span>
+                    <span data-lang-type="jp">(jp)디지털 소장자료</span>
+                    <span data-lang-type="en">(en)디지털 소장자료</span>
                 </h3>
-                <div class="main-more-button" onclick="location.href='categorical.do#more'">
-                    <span data-lang-type="kr">더보기</span>
-                    <span data-lang-type="jp">もっと見る</span>
-                    <span data-lang-type="en">MORE</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 12l-6 6V6z"/></svg>
+                <div data-main-digital-list>
+                    <div data-main-digital-item class="tl01">
+                        <img src="/common/img/coll-item-temp01.jpg" alt="">
+                        <div data-main-digital-texts>
+                            <h4>K-II-22 일관창수</h4>
+                            <!-- <ul data-main-digital-textlist>
+                                <li data-main-digital-name>일관창수</li>
+                                <li data-main-digital-age>1763</li>
+                                <li data-main-digital-writer>남욱</li>
+                                <li data-main-digital-form>책자</li>
+                                <li data-main-digital-size>32.5 * 22.5cm</li>
+                                <li data-main-digital-location>국립중앙도서관</li>
+                            </ul> -->
+                            <button data-main-digital-morebutton type="button">
+                                디지털 소장자료
+                                <span></span>
+                            </button>
+                        </div>
+                    </div><!-- item 끝 -->
+
+                    <div data-main-digital-item class="tl02">
+                        <img src="/common/img/main_archive_02.jpg" alt="">
+                        <div data-main-digital-texts>
+                            <h4>K-II-22 일관창수</h4>
+                            <!-- <ul data-main-digital-textlist>
+                                <li data-main-digital-name>일관창수</li>
+                                <li data-main-digital-age>1763</li>
+                                <li data-main-digital-writer>남욱</li>
+                                <li data-main-digital-form>책자</li>
+                                <li data-main-digital-size>32.5 * 22.5cm</li>
+                                <li data-main-digital-location>국립중앙도서관</li>
+                            </ul> -->
+                            <button data-main-digital-morebutton type="button">
+                                디지털 소장자료
+                                <span></span>
+                            </button>
+                        </div>
+                    </div><!-- item 끝 -->
+
+                    <div data-main-digital-item class="tl03">
+                        <img src="/common/img/coll-item-temp01.jpg" alt="">
+                        <div data-main-digital-texts>
+                            <h4>K-II-22 일관창수</h4>
+                            <!-- <ul data-main-digital-textlist>
+                                <li data-main-digital-name>일관창수</li>
+                                <li data-main-digital-age>1763</li>
+                                <li data-main-digital-writer>남욱</li>
+                                <li data-main-digital-form>책자</li>
+                                <li data-main-digital-size>32.5 * 22.5cm</li>
+                                <li data-main-digital-location>국립중앙도서관</li>
+                            </ul> -->
+                            <button data-main-digital-morebutton type="button">
+                                디지털 소장자료
+                                <span></span>
+                            </button>
+                        </div>
+                    </div><!-- item 끝 -->
+
+                    <div data-main-digital-item class="tl04-tp">
+                        <img src="/common/img/coll-item-temp01.jpg" alt="">
+                        <div data-main-digital-texts>
+                            <h4>K-II-22 일관창수</h4>
+                            <!-- <ul data-main-digital-textlist>
+                                <li data-main-digital-name>일관창수</li>
+                                <li data-main-digital-age>1763</li>
+                                <li data-main-digital-writer>남욱</li>
+                                <li data-main-digital-form>책자</li>
+                                <li data-main-digital-size>32.5 * 22.5cm</li>
+                                <li data-main-digital-location>국립중앙도서관</li>
+                            </ul> -->
+                            <button data-main-digital-morebutton type="button">
+                                디지털 소장자료
+                                <span></span>
+                            </button>
+                        </div>
+                    </div><!-- item 끝 -->
+
+                    <div data-main-digital-item class="tl04-bt">
+                        <img src="/common/img/main_subject_back.jpg" alt="">
+                        <div data-main-digital-texts>
+                            <h4>K-II-22 일관창수</h4>
+                            <!-- <ul data-main-digital-textlist>
+                                <li data-main-digital-name>일관창수</li>
+                                <li data-main-digital-age>1763</li>
+                                <li data-main-digital-writer>남욱</li>
+                                <li data-main-digital-form>책자</li>
+                                <li data-main-digital-size>32.5 * 22.5cm</li>
+                                <li data-main-digital-location>국립중앙도서관</li>
+                            </ul> -->
+                            <button data-main-digital-morebutton type="button">
+                                디지털 소장자료
+                                <span></span>
+                            </button>
+                        </div>
+                    </div><!-- item 끝 -->
+
+                    <div data-main-digital-item class="bl01-tp">
+                        <img src="/common/img/coll-item-temp01.jpg" alt="">
+                        <div data-main-digital-texts>
+                            <h4>K-II-22 일관창수</h4>
+                            <!-- <ul data-main-digital-textlist>
+                                <li data-main-digital-name>일관창수</li>
+                                <li data-main-digital-age>1763</li>
+                                <li data-main-digital-writer>남욱</li>
+                                <li data-main-digital-form>책자</li>
+                                <li data-main-digital-size>32.5 * 22.5cm</li>
+                                <li data-main-digital-location>국립중앙도서관</li>
+                            </ul> -->
+                            <button data-main-digital-morebutton type="button">
+                                디지털 소장자료
+                                <span></span>
+                            </button>
+                        </div>
+                    </div><!-- item 끝 -->
+
+                    <div data-main-digital-item class="bl01-bt">
+                        <img src="/common/img/coll-item-temp01.jpg" alt="">
+                        <div data-main-digital-texts>
+                            <h4>K-II-22 일관창수</h4>
+                            <!-- <ul data-main-digital-textlist>
+                                <li data-main-digital-name>일관창수</li>
+                                <li data-main-digital-age>1763</li>
+                                <li data-main-digital-writer>남욱</li>
+                                <li data-main-digital-form>책자</li>
+                                <li data-main-digital-size>32.5 * 22.5cm</li>
+                                <li data-main-digital-location>국립중앙도서관</li>
+                            </ul> -->
+                            <button data-main-digital-morebutton type="button">
+                                디지털 소장자료
+                                <span></span>
+                            </button>
+                        </div>
+                    </div><!-- item 끝 -->
+
+                    <div data-main-digital-item class="bl02">
+                        <img src="/common/img/main_back_01.jpg" alt="">
+                        <div data-main-digital-texts>
+                            <h4>K-II-22 일관창수</h4>
+                            <!-- <ul data-main-digital-textlist>
+                                <li data-main-digital-name>일관창수</li>
+                                <li data-main-digital-age>1763</li>
+                                <li data-main-digital-writer>남욱</li>
+                                <li data-main-digital-form>책자</li>
+                                <li data-main-digital-size>32.5 * 22.5cm</li>
+                                <li data-main-digital-location>국립중앙도서관</li>
+                            </ul> -->
+                            <button data-main-digital-morebutton type="button">
+                                디지털 소장자료
+                                <span></span>
+                            </button>
+                        </div>
+                    </div><!-- item 끝 -->
+
+                    <div data-main-digital-item class="bl03">
+                        <img src="/common/img/coll-item-temp01.jpg" alt="">
+                        <div data-main-digital-texts>
+                            <h4>K-II-22 일관창수</h4>
+                            <!-- <ul data-main-digital-textlist>
+                                <li data-main-digital-name>일관창수</li>
+                                <li data-main-digital-age>1763</li>
+                                <li data-main-digital-writer>남욱</li>
+                                <li data-main-digital-form>책자</li>
+                                <li data-main-digital-size>32.5 * 22.5cm</li>
+                                <li data-main-digital-location>국립중앙도서관</li>
+                            </ul> -->
+                            <button data-main-digital-morebutton type="button">
+                                디지털 소장자료
+                                <span></span>
+                            </button>
+                        </div>
+                    </div><!-- item 끝 -->
                 </div>
-                <div class="main-subject-list">
-                    <div class="main-subject-item main-subject-nation">
-                        <ul class="main-subject-eachlist">
-                            <li>
-                                <span data-lang-type="kr">소장 국가별</span>
-                                <span data-lang-type="jp">収集国別</span>
-                                <span data-lang-type="en">by country of collection</span>
-                            </li>
-                            <li onclick="location.href='categorical.do#josun'">
-                               <span data-lang-type="kr">한국</span>
-                                <span data-lang-type="jp">韓国</span>
-                                <span data-lang-type="en">Korea</span>
-                                
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="22"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 12l-6 6V6z"/></svg>
-                            </li>
-                            <li onclick="location.href='categorical.do#japan'">
-                                
-                                <span data-lang-type="kr">일본</span>
-                                <span data-lang-type="jp">日本</span>
-                                <span data-lang-type="en">Japan</span>
-                              
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="22"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 12l-6 6V6z"/></svg>
-                            </li>
-                        </ul>
-                    </div>
 
-                    <div class="main-subject-item main-subject-form">
-                        <ul class="main-subject-eachlist">
-                            <li>
-                                <span data-lang-type="kr">기록물 형태별</span>
-                                <span data-lang-type="jp">レコードの種類別</span>
-                                <span data-lang-type="en">by type of record</span>
-                            </li>
-                            <li onclick="location.href='categorical.do#book'">
-                               
-                               <span data-lang-type="kr">책자</span>
-                                <span data-lang-type="jp">本</span>
-                                <span data-lang-type="en">book</span>
-                                
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="22"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 12l-6 6V6z"/></svg>
-                            </li>
-                            <li onclick="location.href='categorical.do#ilbook'">
-                               
-                               <span data-lang-type="kr">서화(글)</span>
-                                <span data-lang-type="jp">書道・絵画 (執筆)</span>
-                                <span data-lang-type="en">Calligraphy and painting (writing)</span>
-                                
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="22"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 12l-6 6V6z"/></svg>
-                            </li>
-                            <li onclick="location.href='categorical.do#ilart'">
-                                
-                                <span data-lang-type="kr">서화(그림)</span>
-                                <span data-lang-type="jp">書道と絵画 (絵画)</span>
-                                <span data-lang-type="en">Calligraphy and painting (painting)</span>
-                                
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="22"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 12l-6 6V6z"/></svg>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="main-subject-item main-subject-category">
-                        <ul class="main-subject-eachlist">
-                            <li>
-                                <span data-lang-type="kr"> 등재구분별</span>
-                                <span data-lang-type="jp">登録区分</span>
-                                <span data-lang-type="en">Classification of registration</span>
-                            </li>
-                            <li onclick="location.href='categorical.do#trade'">
-
-                                <span data-lang-type="kr">외교 기록</span>
-                                <span data-lang-type="jp">外交記録</span>
-                                <span data-lang-type="en">diplomatic record</span>
-                                
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="22"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 12l-6 6V6z"/></svg>
-                            </li>
-                            <li onclick="location.href='categorical.do#travel'">
-                               
-                               <span data-lang-type="kr">여정의 기록</span>
-                                <span data-lang-type="jp">旅の記録</span>
-                                <span data-lang-type="en">record of the journey</span>
-                                
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="22"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 12l-6 6V6z"/></svg>
-                            </li>
-                            <li onclick="location.href='categorical.do#culture'">
-                                
-                                <span data-lang-type="kr">문화교류의 기록</span>
-                                <span data-lang-type="jp">文化交流の記録</span>
-                                <span data-lang-type="en">Records of cultural exchange</span>
-                                
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="22"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 12l-6 6V6z"/></svg>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="main-subject-item main-subject-age">
-                        <ul class="main-subject-eachlist">
-                            <li>
-                                <span data-lang-type="kr">제작 시기별</span>
-                                <span data-lang-type="jp">生産時期別</span>
-                                <span data-lang-type="en">By production period</span>
-                            </li>
-                            <li onclick="location.href='categorical.do#age1'">
-                                1607~1642
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="22"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 12l-6 6V6z"/></svg>
-                            </li>
-                            <li onclick="location.href='categorical.do#age2'">
-                                1643~1711
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="22"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 12l-6 6V6z"/></svg>
-                            </li>
-                            <li onclick="location.href='categorical.do#age3'">
-                                1719~1811
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="22"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 12l-6 6V6z"/></svg>
-                            </li>
-                            <li onclick="location.href='categorical.do#age4'">
-                               
-                               <span data-lang-type="kr">제작년도 미상</span>
-                                <span data-lang-type="jp">製造年不明</span>
-                                <span data-lang-type="en">Production year unknown</span>
-                                
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="22"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 12l-6 6V6z"/></svg>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </article>
+                
+            </div>
         </section>
-    </div>
 
+    </div>
+<%@ include file="/WEB-INF/views/user/page/btmSlider.jsp" %> <!-- 하단 소장처 슬라이드 -->
+<%@ include file="/WEB-INF/views/user/include/viewVirtualEx.jsp" %> <!-- 가상전시관 바로가기 영역 -->    
 <%@ include file="/WEB-INF/views/user/include/footer.jsp" %>

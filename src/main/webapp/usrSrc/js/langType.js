@@ -46,43 +46,68 @@ function checkLangType() { // Read Language Setting From LocalStorage
     });
 }
 
+// function langSelector(element) {
+//     document.addEventListener('DOMContentLoaded', function() {
+//         const whatsLang = localStorage.getItem('JSArchiveLangType');
+//         let options = element.querySelectorAll('option');
+
+//         options.forEach((e) => {
+//             if (e.value === whatsLang) {
+//                 e.selected = true;
+//             }
+//         });
+//     });
+
+//     element.addEventListener('change', () => {
+//         let currentValue = element.value;
+
+//         setLangType(currentValue);
+//     });
+// }
+
 function langSelector(element) {
+    
+
     document.addEventListener('DOMContentLoaded', function() {
         const whatsLang = localStorage.getItem('JSArchiveLangType');
-        let options = element.querySelectorAll('option');
 
-        options.forEach((e) => {
+        element.forEach((e) => {
             if (e.value === whatsLang) {
                 e.selected = true;
             }
         });
     });
 
-    element.addEventListener('change', () => {
-        let currentValue = element.value;
-
-        setLangType(currentValue);
-    });
-}
-
-function langSelector2(element) {
-    document.addEventListener('DOMContentLoaded', function() {
-        const whatsLang = localStorage.getItem('JSArchiveLangType');
-        let options = element.querySelectorAll('option');
-
-        options.forEach((e) => {
-            if (e.value === whatsLang) {
-                e.selected = true;
-            }
+    element.forEach((f) => {
+        f.addEventListener('click', () => {
+            let currentValue = f.value;
+    
+            setLangType(currentValue);
         });
     });
-
-    element.addEventListener('change', () => {
-        let currentValue = element.value;
-
-        setLangType(currentValue);
-    });
+    
 }
+
+
+
+// function langSelector2(element) {
+//     document.addEventListener('DOMContentLoaded', function() {
+//         const whatsLang = localStorage.getItem('JSArchiveLangType');
+//         let options = element.querySelectorAll('option');
+
+//         options.forEach((e) => {
+//             if (e.value === whatsLang) {
+//                 e.selected = true;
+//             }
+//         });
+//     });
+
+//     element.addEventListener('click', () => {
+//         let currentValue = element.value;
+
+//         setLangType(currentValue);
+//     });
+// }
 
 /* 적용 예제
  * <p>

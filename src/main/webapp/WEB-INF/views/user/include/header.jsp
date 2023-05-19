@@ -37,8 +37,16 @@
 	    
 			<div class="hd-logo-div" onclick="location.href='/'">
 				<img class="mob-logo-img" src="/common/img/logo_w.svg" alt="조선통신사 디지털아카이브 로고">
-				<h2>조선통신사</h2>
-				<p>Joseon Tongsinsa</p>
+				<h2>
+					<span data-lang-type="kr">조선통신사</span>
+					<span data-lang-type="jp">朝鮮通信使</span>
+					<span data-lang-type="en">Joseon Tongsinsa</span>
+				</h2>
+				<p>
+					<span data-lang-type="kr">Joseon Tongsinsa</span>
+					<span data-lang-type="jp">Joseon Tongsinsa</span>
+					<span data-lang-type="en">Joseon Tongsinsa</span>
+				</p>
 			</div>
 	        <div class="hd-search-bar">
 				<button data-total-search-btn>
@@ -150,7 +158,19 @@
 			<span></span><span></span><span></span>
 		</p>
 		<div class="mob-logo-div" onclick="location.href='/'">
-			<img class="mob-logo-img" src="/common/img/logo_color.svg" alt="조선통신사 디지털아카이브 로고">
+			<img class="mob-logo-img" src="/common/img/logo_w.svg" alt="조선통신사 디지털아카이브 로고">
+			<div>
+				<h2>
+					<span data-lang-type="kr">조선통신사</span>
+					<span data-lang-type="jp">朝鮮通信使</span>
+					<span data-lang-type="en">Joseon Tongsinsa</span>
+				</h2>
+				<p>
+					<span data-lang-type="kr">Joseon Tongsinsa</span>
+					<span data-lang-type="jp">(jp)Joseon Tongsinsa</span>
+					<span data-lang-type="en">(en)Joseon Tongsinsa</span>
+				</p>
+			</div>
 			
 		</div>
 		<div>

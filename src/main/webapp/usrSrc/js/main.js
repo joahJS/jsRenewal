@@ -167,15 +167,15 @@ const collSwiper = new Swiper('.main-coll-slider', {
  
 /* 디지털 소장자료 slider - autoplay 일시중지 버튼 */
 
-mainSliderPause.addEventListener("click",function(){
-	if( mainSliderPause.classList.contains("pause-off") == true){
-		collSwiper.autoplay.start();
-		mainSliderPause.classList.remove("pause-off");
-	} else if(mainSliderPause.classList.contains("pause-off") == false){
-		collSwiper.autoplay.stop();
-		mainSliderPause.classList.add("pause-off");
-	}
-})
+// mainSliderPause.addEventListener("click",function(){
+// 	if( mainSliderPause.classList.contains("pause-off") == true){
+// 		collSwiper.autoplay.start();
+// 		mainSliderPause.classList.remove("pause-off");
+// 	} else if(mainSliderPause.classList.contains("pause-off") == false){
+// 		collSwiper.autoplay.stop();
+// 		mainSliderPause.classList.add("pause-off");
+// 	}
+// })
 
 
 

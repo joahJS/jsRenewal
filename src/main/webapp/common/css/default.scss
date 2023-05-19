@@ -41,7 +41,7 @@ body {
   font-weight: normal;
   margin: 0 auto;
   word-break: keep-all;
-  padding-left: 31rem;
+  padding-left: 21.5rem;
 }
 
 button {
@@ -125,11 +125,9 @@ button {
   display: none;
 }
 
-[data-lang-type].show {
-  // display: inline-block;
+[data-lang-type].show {  
   display: -webkit-box;
   font-size: inherit;
-  // font-size: var(--ftMain);
   
 }
 
@@ -167,63 +165,83 @@ button {
 
 [data-section-head-title] {
   font-size: var(--ftTitle);
+  margin: 0 auto;
+}
+
+/* 하단 가상전시관 바로가기 공통영역 */
+
+#viewVrEx {
+  width: 100%;
+  height: 10.4rem;
+  position: relative;
+  background-image: url(/common/img/view_vr_back.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:after {
+    content: '';
+    display: block;
+    background-color: rgba(var(--bgBlack), .63);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  button {
+    width: 100%;
+    max-width: 30.4rem;
+    border: 2px solid rgb(var(--white));
+    border-radius: 2rem;
+    font-size: var(--ftRem);
+    color: rgb(var(--white));
+    font-weight: bold;
+    position: relative;
+    z-index: 9;
+    padding: 1rem 0;
+  }
 }
 
 
 /* common mediaquery */
-
-@media (max-width: 1024px) {
-  .web-common-inner, .web-inner-depth{
-    width:100%;
-    padding:.5rem;
+@media (max-width: 1279px) {
+  body {
+    padding-left: 16rem;
   }
 
-  #back_img{
-    #back_img_inner{
-
-    }
-    h3{
-
-    }
+  .web-common-inner {
+    max-width: 40.8rem;
   }
 }
 
+@media (max-width: 1023px) {
+  body {
+    padding-left: 0
+  }
 
+  .web-common-inner {
+    width:100%;
+    padding: 0 .8rem;
+  }
+
+}
 
 @media (max-width: 767px) {
 
-  #back_img {
-    height: 14rem;
-
-    #back_img_inner {
-      left: 0;
-      right: 0;
-      text-align: center;
-      transform:none;
-      h3 {
-        font-size: var(--font32);
-        right: 50%;
-        transform: translate(50%, -50%);
-      }
+  #viewVrEx {
+    button {
+      font-size: var(--ftMain);
     }
+  }
+
+  .web-common-inner {
+    padding: 1.2rem;
   }
 }
 
-
 @media (max-width: 479px) {
 
-  #back_img {
-    height: 10rem;
-
-    #back_img_inner {
-      
-      h3 {
-        font-size: var(--font22);
-      }
-    }
-  }
-
-  .round_btnStyle{
-    font-size: var(--font14);
-  }
 }
