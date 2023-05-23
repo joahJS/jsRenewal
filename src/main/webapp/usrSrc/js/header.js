@@ -6,6 +6,7 @@
 
 const mobMenuBtn = document.getElementById('mobile-burger-button');
 const mobMenuList = document.getElementById('header');
+const mobMenuClose = document.getElementById('mobile-header-close');
 
 
 
@@ -19,30 +20,33 @@ const mobMenuList = document.getElementById('header');
    
  })
 
- /* 모바일메뉴 외부 영역 클릭시 메뉴닫기, 이주성대리 */
-//  window.addEventListener('click',function(f){
-//    if(!f.target.contains(mobMenuList) && !f.target.contains(mobMenuBtn)){
-//       mobMenuList.classList.remove('mob-menu-show');
-//    } else {
-      
-//    }
-//  })
+ mobMenuClose.addEventListener('click', function() {
+   mobMenuList.classList.remove('mob-menu-show');  
+ })
 
+
+ /* 메뉴 mouseover or click 시 서브메뉴 출력 */
 const navMenuList = document.querySelectorAll('nav > ul > li')
+const navMenuPlus = document.querySelectorAll('.nav-plus-opacity')
 const navSubs = document.getElementsByClassName('hd-subnav-hidden')
 
 
    for (let i = 0; i < navMenuList.length; i++) {
+
+      //마우스 진입시 서브메뉴 출력
       navMenuList[i].addEventListener('mouseover', function() {
          if ( navMenuList[i].getElementsByClassName('hd-subnav-hidden')[0] != null) {
+            navMenuList[i].getElementsByClassName('nav-plus-opacity')[0].classList.add('plus-display-none');
             navMenuList[i].getElementsByClassName('hd-subnav-hidden')[0].classList.remove('hd-subnav-hidden');
          } else {
 
          }
       })
 
+      //마우스 떠날 시 서브메뉴 닫기
       navMenuList[i].addEventListener('mouseleave', function() {
          if ( navMenuList[i].getElementsByClassName('hd-subnav-list')[0] != null) {
+            navMenuList[i].getElementsByClassName('nav-plus-opacity')[0].classList.remove('plus-display-none');
             navMenuList[i].getElementsByClassName('hd-subnav-list')[0].classList.add('hd-subnav-hidden');
             
          } else {

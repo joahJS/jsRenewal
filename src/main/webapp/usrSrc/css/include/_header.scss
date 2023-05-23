@@ -12,6 +12,35 @@ body header.web-common-inner {
     flex-direction: column;
 }
 
+[data-nav-have-sublist] {
+    position: relative;
+
+    [data-nav-plus-icon] {
+        position: absolute;
+        top: .75rem;
+        right: 1.3rem;
+
+        span {
+            display: block;
+            width: .55rem;
+            height: 2px;
+            background-color: rgb(var(--white));
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            &:nth-child(2) {
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+}
+
+[data-nav-have-sublist] [data-nav-plus-icon] span.nav-plus-opacity.plus-display-none {
+    display: none;
+}
+
 .header-web-links{
     display:flex;
     gap:1rem;
@@ -167,16 +196,24 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 3rem;
     background: rgb(var(--bgBlack));
-    z-index: 999;
+    z-index: 998;
     justify-content: center;
     align-items: center;
 
     .mob-logo-img{
         width:1.5rem;
     }
+}
+
+#mobile-header-close {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: .5rem;
 }
 
 .mob-logo-div {
@@ -201,14 +238,15 @@ nav {
 
 }
 
-#mobile-burger-button{
+#mobile-burger-button {
     position: absolute;
     top: 50%;
-    left: 4rem;
+    left: 3.5rem;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
+    padding: .5rem;
 
     span {
         display: block;
@@ -220,17 +258,13 @@ nav {
 }
 
 .mob-menu-show {
-    display: block;
-    top: 3rem;
-    padding-top: 1rem;
-    border-top: 1px solid rgba(var(--royalblue),.5);
-    filter: drop-shadow(7px 20px 14px rgba(var(--royalblue), 0.5));
+    display: block !important;
 }
 
 
 /* mediaquery */
 
-@media (max-width: 1279px) {
+@media (max-width: 1280px) {
 
     body header.web-common-inner {
         width: 16rem;
@@ -238,25 +272,55 @@ nav {
     
   }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
     #mobile-header {
         display: flex;
+    }
+
+    header #mobile-header-close {
+        display: block;
     }
 
     body header.web-common-inner {
         display: none;
         position: fixed;
-        width: 100%;
-        height: auto;
-        z-index: 9;
+        width: 16rem;
+        height: 100%;
+        z-index: 999;
+        height: 100vh !important;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
+    #mobile-burger-button {
+        left: .7rem;
+    }
+
+    .mob-logo-div {
+        display: none;
+    }
+
+    .hd-logo-div {
+        top: 12.5%;
+        gap: 0.15rem;
+
+        h2 {
+            margin-top: .15rem;
+            font-size: var(--ftUp);
+        }
+
+        img {
+            width: 4rem;
+        }
+    }
+
+    [data-nav-exhibition] {
+        bottom: 2.8rem;
+    }
 
 }
 
-@media (max-width: 479px) {
+@media (max-width: 480px) {
 
 }

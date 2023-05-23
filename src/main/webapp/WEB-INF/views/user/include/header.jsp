@@ -59,7 +59,7 @@
 					<li onclick="location.href='/'">
 						<span>Home</span>
 					</li>
-					<li onclick="location.href='/archive.do'">
+					<li data-nav-have-sublist>
 						<!-- <a href="/archive.do"> -->
 							<span data-lang-type="kr">아카이브 소개</span>
 							<span data-lang-type="jp">アーカイブの紹介</span>
@@ -84,9 +84,13 @@
 								</li>
 							</ul>
 						</div>
+						<p data-nav-plus-icon>
+							<span></span>
+							<span class="nav-plus-opacity"></span>
+						</p>
 					</li>
 
-					<li onclick="location.href='/categorical.do#trade'">
+					<li data-nav-have-sublist>
 						<!-- <a href="/categorical.do#trade"> -->
 							<span data-lang-type="kr">기록물 분류</span>
 							<span data-lang-type="jp">カテゴリー別記録</span>
@@ -131,6 +135,10 @@
 									</li>
 								</ul>
 							</div>
+							<p data-nav-plus-icon>
+								<span></span>
+								<span class="nav-plus-opacity"></span>
+							</p>
 					</li>
 					<li onclick="location.href='/digital.do'">
 						<!-- <a href="/digital.do"> -->
@@ -151,7 +159,9 @@
 			</button>
 
 
-	    
+			<button id="mobile-header-close" type="button">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="34" height="34"><path d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z" fill="rgba(255,255,255,1)"></path></svg>
+			</button>
 	</header>
 	<section id="mobile-header">
 		<p id="mobile-burger-button">

@@ -31,7 +31,7 @@
                         <span data-lang-type="en">(en)Joseon Tongsinsa Digital Archive</span>
                     </p>
                     <h2>
-                        <span data-lang-type="kr">조선통신사 <span class="span-block">디지털 아카이브</span></span>
+                        <span data-lang-type="kr">조선통신사 <span class="span-block"> 디지털 아카이브</span></span>
                         <span data-lang-type="jp" >朝鮮通信使デジタルアーカイブ</span>
                         <span data-lang-type="en" >Joseon Tongsinsa Digital Archive</span>
                     </h2>
@@ -43,8 +43,7 @@
                     
                 </p>
                 <form class="main-search-bar">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/></svg>
-                    <input type="text" placeholder="Search..." data-main-search-text maxlength="50">
+                    <input type="text" placeholder="검색어를 입력하세요." data-main-search-text maxlength="50">
                     <button data-main-search-btn>
                         <p>
                             <span data-lang-type="kr">Search</span>
@@ -154,17 +153,17 @@
                             <span data-lang-type="jp">登録区分</span>
                             <span data-lang-type="en">Classification of registration</span>
                         </li>
-                        <li data-subj-item>
+                        <li data-subj-item onclick="location.href='categorical.do#trade'">
                             <span data-lang-type="kr">외교기록</span>
                             <span data-lang-type="jp">外交記録</span>
                             <span data-lang-type="en">diplomatic record</span>
                         </li>
-                        <li data-subj-item>
+                        <li data-subj-item onclick="location.href='categorical.do#travel'">
                             <span data-lang-type="kr">여정의 기록</span>
                             <span data-lang-type="jp">旅の記録</span>
                             <span data-lang-type="en">record of the journey</span>
                         </li>
-                        <li data-subj-item>
+                        <li data-subj-item onclick="location.href='categorical.do#culture'">
                             <span data-lang-type="kr">문화교류의 기록</span>
                             <span data-lang-type="jp">文化交流の記録</span>
                             <span data-lang-type="en">Records of cultural exchange</span>
@@ -178,22 +177,22 @@
                             <span data-lang-type="jp">生産時期別</span>
                             <span data-lang-type="en">By production period</span>
                         </li>
-                        <li data-subj-item>
+                        <li data-subj-item onclick="location.href='categorical.do#age1'">
                             <span data-lang-type="kr">1607~1636</span>
                             <span data-lang-type="jp">1607~1636</span>
                             <span data-lang-type="en">1607~1636</span>
                         </li>
-                        <li data-subj-item>
+                        <li data-subj-item onclick="location.href='categorical.do#age2'">
                             <span data-lang-type="kr">1643~1711</span>
                             <span data-lang-type="jp">1643~1711</span>
                             <span data-lang-type="en">1643~1711</span>
                         </li>
-                        <li data-subj-item>
+                        <li data-subj-item onclick="location.href='categorical.do#age3'">
                             <span data-lang-type="kr">1719~1811</span>
                             <span data-lang-type="jp">1719~1811</span>
                             <span data-lang-type="en">1719~1811</span>
                         </li>
-                        <li data-subj-item>
+                        <li data-subj-item onclick="location.href='categorical.do#age4'">
                             <span data-lang-type="kr">제작연도 미상</span>
                             <span data-lang-type="jp">製造年不明</span>
                             <span data-lang-type="en">Production year unknown</span>
@@ -207,12 +206,12 @@
                             <span data-lang-type="jp">収集国別</span>
                             <span data-lang-type="en">by country of collection</span>
                         </li>
-                        <li data-subj-item>
+                        <li data-subj-item onclick="location.href='categorical.do#josun'">
                             <span data-lang-type="kr">한국</span>
                             <span data-lang-type="jp">韓国</span>
                             <span data-lang-type="en">Korea</span>
                         </li>
-                        <li data-subj-item>
+                        <li data-subj-item onclick="location.href='categorical.do#japan'">
                             <span data-lang-type="kr">일본</span>
                             <span data-lang-type="jp">日本</span>
                             <span data-lang-type="en">Japan</span>
@@ -226,12 +225,12 @@
                             <span data-lang-type="jp">コレクション</span>
                             <span data-lang-type="en">collection</span>
                         </li>
-                        <li data-subj-item>
+                        <li data-subj-item onclick="location.href='categorical.do#owner'">
                             <span data-lang-type="kr">한국</span>
                             <span data-lang-type="jp">韓国</span>
                             <span data-lang-type="en">Korea</span>
                         </li>
-                        <li data-subj-item>
+                        <li data-subj-item onclick="location.href='categorical.do#owner'">
                             <span data-lang-type="kr">일본</span>
                             <span data-lang-type="jp">日本</span>
                             <span data-lang-type="en">Japan</span>
@@ -245,17 +244,17 @@
                             <span data-lang-type="jp">種類別</span>
                             <span data-lang-type="en">by type of record</span>
                         </li>
-                        <li data-subj-item>
+                        <li data-subj-item onclick="location.href='categorical.do#book'">
                             <span data-lang-type="kr">책자</span>
                             <span data-lang-type="jp">本</span>
                             <span data-lang-type="en">book</span>
                         </li>
-                        <li data-subj-item>
+                        <li data-subj-item onclick="location.href='categorical.do#ilbook'">
                             <span data-lang-type="kr">서화(글)</span>
                             <span data-lang-type="jp">書道・絵画 (執筆)</span>
                             <span data-lang-type="en">Calligraphy and painting (writing)</span>
                         </li>
-                        <li data-subj-item>
+                        <li data-subj-item onclick="location.href='categorical.do#ilart'">
                             <span data-lang-type="kr">서화(그림)</span>
                             <span data-lang-type="jp">書道と絵画 (絵画)</span>
                             <span data-lang-type="en">Calligraphy and painting (painting)</span>
@@ -266,7 +265,7 @@
             </article>
         </section>
 
-        <!-- 분류별 기록물 모바일 슬라이드 -->
+        <!-- 분류별 기록물 / 모바일 슬라이드 -->
         <section id="mainSubjMob">
             <article id="mainSubjInnerMob" class="web-common-inner">
                 <h2 data-section-head-title>
@@ -275,7 +274,7 @@
                     <span data-lang-type="en">Records by Classification</span>
                 </h2>
                 <div class="main-subj-texts-mob swiper-wrapper">
-                    <!-- 등재구분별 -->
+                    <!-- 등재구분별 / 모바일-->
                     <div class="swiper-slide">
                         <ul data-subj-list-mob>
                             <li data-subj-subtitle-mob>
@@ -283,25 +282,134 @@
                                 <span data-lang-type="jp">登録区分</span>
                                 <span data-lang-type="en">Classification of registration</span>
                             </li>
-                            <li data-subj-item-mob>
+                            <li data-subj-item-mob onclick="location.href='categorical.do#trade'">
                                 <span data-lang-type="kr">외교기록</span>
                                 <span data-lang-type="jp">外交記録</span>
                                 <span data-lang-type="en">diplomatic record</span>
                             </li>
-                            <li data-subj-item-mob>
+                            <li data-subj-item-mob onclick="location.href='categorical.do#travel'">
                                 <span data-lang-type="kr">여정의 기록</span>
                                 <span data-lang-type="jp">旅の記録</span>
                                 <span data-lang-type="en">record of the journey</span>
                             </li>
-                            <li data-subj-item-mob>
+                            <li data-subj-item-mob onclick="location.href='categorical.do#culture'">
                                 <span data-lang-type="kr">문화교류의 기록</span>
                                 <span data-lang-type="jp">文化交流の記録</span>
                                 <span data-lang-type="en">Records of cultural exchange</span>
                             </li>
                         </ul>                    
                     </div>
+
+                    <!-- 제작시기별 / 모바일 -->
+                    <div class="swiper-slide">
+                        <ul data-subj-list-mob>
+                            <li data-subj-subtitle-mob>
+                                <span data-lang-type="kr">제작시기별</span>
+                                <span data-lang-type="jp">生産時期別</span>
+                                <span data-lang-type="en">By production period</span>
+                            </li>
+                            <li data-subj-item-mob onclick="location.href='categorical.do#age1'">
+                                <span data-lang-type="kr">1607~1642</span>
+                                <span data-lang-type="jp">1607~1636</span>
+                                <span data-lang-type="en">1607~1636</span>
+                            </li>
+                            <li data-subj-item-mob onclick="location.href='categorical.do#age2'">
+                                <span data-lang-type="kr">1643~1711</span>
+                                <span data-lang-type="jp">1643~1711</span>
+                                <span data-lang-type="en">1643~1711</span>
+                            </li>
+                            <li data-subj-item-mob onclick="location.href='categorical.do#age3'">
+                                <span data-lang-type="kr">1719~1811</span>
+                                <span data-lang-type="jp">1719~1811</span>
+                                <span data-lang-type="en">1719~1811</span>
+                            </li>
+                            <li data-subj-item-mob onclick="location.href='categorical.do#age4'">
+                                <span data-lang-type="kr">제작연도 미상</span>
+                                <span data-lang-type="jp">製造年不明</span>
+                                <span data-lang-type="en">Production year unknown</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 소장국가별 / 모바일 -->
+                    <div class="swiper-slide">
+                        <ul data-subj-list-mob>
+                            <li data-subj-subtitle-mob>
+                                <span data-lang-type="kr">소장국가별</span>
+                                <span data-lang-type="jp">収集国別</span>
+                                <span data-lang-type="en">by country of collection</span>
+                            </li>
+                            <li data-subj-item-mob onclick="location.href='categorical.do#josun'">
+                                <span data-lang-type="kr">한국</span>
+                                <span data-lang-type="jp">韓国</span>
+                                <span data-lang-type="en">Korea</span>
+                            </li>
+                            <li data-subj-item-mob onclick="location.href='categorical.do#japan'">
+                                <span data-lang-type="kr">일본</span>
+                                <span data-lang-type="jp">日本</span>
+                                <span data-lang-type="en">Japan</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 소장처별 / 모바일 -->
+                    <div class="swiper-slide">
+                        <ul data-subj-list-mob>
+                            <li data-subj-subtitle-mob>
+                                <span data-lang-type="kr">소장처별</span>
+                                <span data-lang-type="jp">コレクション</span>
+                                <span data-lang-type="en">collection</span>
+                            </li>
+                            <li data-subj-item-mob onclick="location.href='categorical.do#owner'">
+                                <span data-lang-type="kr">한국</span>
+                                <span data-lang-type="jp">韓国</span>
+                                <span data-lang-type="en">Korea</span>
+                            </li>
+                            <li data-subj-item-mob onclick="location.href='categorical.do#owner'">
+                                <span data-lang-type="kr">일본</span>
+                                <span data-lang-type="jp">日本</span>
+                                <span data-lang-type="en">Japan</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 형태별 / 모바일 -->
+                    <div class="swiper-slide">
+                        <ul data-subj-list-mob>
+                            <li data-subj-subtitle-mob>
+                                <span data-lang-type="kr">형태별</span>
+                                <span data-lang-type="jp">種類別</span>
+                                <span data-lang-type="en">by type of record</span>
+                            </li>
+                            <li data-subj-item-mob onclick="location.href='categorical.do#book'">
+                                <span data-lang-type="kr">책자</span>
+                                <span data-lang-type="jp">本</span>
+                                <span data-lang-type="en">book</span>
+                            </li>
+                            <li data-subj-item-mob onclick="location.href='categorical.do#ilbook'">
+                                <span data-lang-type="kr">서화(글)</span>
+                                <span data-lang-type="jp">書道・絵画 (執筆)</span>
+                                <span data-lang-type="en">Calligraphy and painting (writing)</span>
+                            </li>
+                            <li data-subj-item-mob onclick="location.href='categorical.do#ilart'">
+                                <span data-lang-type="kr">서화(그림)</span>
+                                <span data-lang-type="jp">書道と絵画 (絵画)</span>
+                                <span data-lang-type="en">Calligraphy and painting (painting)</span>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </article>
+
+            <div class="main-subj-slider-buttons">
+                <button class="main-subj-prev"></button>
+                <button class="main-subj-next"></button>
+            </div>
+
+            <div class="swiper-pagination">
+
+            </div>
          
         </section>
         

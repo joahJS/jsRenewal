@@ -164,18 +164,37 @@ const collSwiper = new Swiper('.main-coll-slider', {
     }
 });
 
- 
-/* 디지털 소장자료 slider - autoplay 일시중지 버튼 */
 
-// mainSliderPause.addEventListener("click",function(){
-// 	if( mainSliderPause.classList.contains("pause-off") == true){
-// 		collSwiper.autoplay.start();
-// 		mainSliderPause.classList.remove("pause-off");
-// 	} else if(mainSliderPause.classList.contains("pause-off") == false){
-// 		collSwiper.autoplay.stop();
-// 		mainSliderPause.classList.add("pause-off");
-// 	}
-// })
+// 모바일 분류별 기록물 슬라이드
+
+const subjSwiper = new Swiper('#mainSubjInnerMob', {
+    slidesPerView: 1,
+	allowTouchMove: true,
+	simulateTouch: false,
+	preventClicks: false,
+	preventClicksPropagation: false,
+	touchStartPreventDefault: false,
+	observer: true, 
+	observeParents: true,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+    },
+
+    navigation: {
+      nextEl: '.main-subj-next',
+      prevEl: '.main-subj-prev',
+    },
+
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true,
+	},
+});
+
+ 
+
 
 
 
