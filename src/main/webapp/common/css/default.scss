@@ -48,12 +48,6 @@ button {
   cursor: pointer;
 }
 
-#backgroundImg {
-  background-image: url(/common/img/back_cloud.png);
-  height: auto;
-}
-
-
 .web-common-inner {
   max-width: 980px;
   margin: 0 auto;
@@ -89,10 +83,9 @@ button {
 
 //서브페이지 네비영역 이미지
 #back_img {
-  height: 18rem;
+  height: 20rem;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
   position: relative;
   z-index: -1;
 
@@ -100,22 +93,33 @@ button {
   #back_img_inner {
     position: absolute;
     width: 100%;
-    max-width:1280px;
     height: inherit;
     bottom: 0;
-    backdrop-filter: blur(2px);
+    background-color: rgba(var(--bgBlack), .63);
     left: 50%;
     transform: translateX(-50%);
+    z-index: 0;
+
+    hgroup {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      [data-search-subtitle] {
+        margin: 0 auto 1rem auto;
+      }
+    }
   }
 
   h3 {
     color: rgba(var(--white), 1);
-    font-size: var(--font42);
-    filter: drop-shadow(0px 0px 4px rgba(var(--black),.6));
-    top: 64%;
-    position: absolute;
-    right:15px;
-    transform: translate(0, -50%);
+    font-size: var(--ftTitle);
+    position: relative;
+    z-index: 1;
   }
 
 }

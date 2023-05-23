@@ -1586,7 +1586,8 @@ ul[data-main-digital-textlist] li:first-child:before {
 }
 /*searchResult.css*/
 .sr-img {
-  background-image: url(/common/img/main_subject_back2.jpg);
+  background-image: url(/common/img/main_back_01.png);
+  background-position: bottom;
 }
 
 .search-result-notify {
@@ -1594,6 +1595,17 @@ ul[data-main-digital-textlist] li:first-child:before {
   font-size: var(--font18);
   border-bottom: 1px solid rgba(var(--black), 0.15);
   padding-bottom: 1rem;
+}
+
+[data-search-subtitle] {
+  background-color: rgb(219, 219, 219);
+  padding: 0.5rem 1.6rem;
+  border-radius: 1rem;
+  font-size: var(--ftMain);
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  z-index: 1;
 }
 
 #searchResult {
@@ -1991,6 +2003,15 @@ nav li a span {
   }
 }
 /* Components - Total Search*/
+#totalSearchBack {
+  height: 7.2rem;
+  width: 100%;
+  background-color: rgba(var(--bgBlack), 0.04);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #total-search-box {
   height: 15.5rem;
   margin: 0 auto;
@@ -2019,15 +2040,12 @@ nav li a span {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  gap: 0.6rem;
   -webkit-margin-start: auto;
           margin-inline-start: auto;
-  width: 50rem;
-  height: 3.3rem;
-  border: 0.5px solid rgba(var(--black), 0.5);
-  border-radius: 5rem;
+  width: 100%;
+  height: 3.2rem;
   margin: 0 auto;
-  overflow: hidden;
+  filter: drop-shadow(3px 0 8px rgba(var(--bgBlack), 0.15));
 }
 #totalSearch:not(:has(:-moz-placeholder-shown)) {
   background-color: rgba(var(--white), 1);
@@ -2042,16 +2060,26 @@ nav li a span {
 #totalSearch #inputSearch {
   flex: 1 1 auto;
   outline: 0;
-  padding: 0.25rem;
+  padding: 0.8rem 0.8rem 0.8rem 3.5rem;
+  background-color: rgb(var(--white));
+  background-image: url(/common/img/search-line.svg);
+  background-position: 1.5rem center;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem 0 0 0.5rem;
+  width: 100%;
+  height: inherit;
 }
 #totalSearch #btnSearch {
   color: rgba(var(--white), 1);
   cursor: pointer;
-  background-color: rgba(var(--royalblue), 1);
+  background-color: rgb(var(--bgBlack));
   padding: 1.5rem;
-}
-#totalSearch #btnSearch svg {
-  display: none;
+  width: 7.6rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #totalSearch:focus-within {
   border-color: rgba(var(--royalblue), 0.3);

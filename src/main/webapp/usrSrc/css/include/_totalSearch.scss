@@ -1,5 +1,14 @@
 /* Components - Total Search*/
 
+#totalSearchBack {
+    height: 7.2rem;
+    width: 100%;
+    background-color: rgba(var(--bgBlack), .04);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 #total-search-box {
     height: 15.5rem;
@@ -33,21 +42,18 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    gap: .6rem;
     margin-inline-start: auto;
-    width: 50rem;
-    height: 3.3rem;
-    border: .5px solid rgba(var(--black), .5);
-    border-radius: 5rem;
+    width: 100%;
+    height: 3.2rem;
     margin: 0 auto;
-    overflow: hidden;
+    filter: drop-shadow(3px 0 8px rgba(var(--bgBlack), .15));
 
     &:not(:has(:placeholder-shown)) {
         //placeholder를 가지고 있지 않을때는 흰색, 가지면 투명! 이란 뜻
         background-color: rgba(var(--white), 1);
     }
 
-    >hr {
+    > hr {
         height: .8rem;
         background-color: rgba(var(--black), .1);
     }
@@ -55,18 +61,28 @@
     #inputSearch {
         flex: 1 1 auto;
         outline: 0;
-        padding: 0.25rem;
+        padding: .8rem .8rem .8rem 3.5rem;
+        background-color: rgb(var(--white));
+        background-image: url(/common/img/search-line.svg);
+        background-position: 1.5rem center;
+        background-repeat: no-repeat;
+        border-radius: .5rem 0 0 .5rem;
+        width: 100%;
+        height: inherit;
     }
 
     #btnSearch {
         color: rgba(var(--white), 1);
         cursor: pointer;
-        background-color: rgba(var(--royalblue), 1);
+        background-color: rgb(var(--bgBlack));
         padding: 1.5rem;
+        width: 7.6rem;
+        border-radius: 0 .5rem .5rem 0;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        svg{
-            display:none;
-        }
     }
 
     &:focus-within {

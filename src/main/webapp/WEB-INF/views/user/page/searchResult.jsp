@@ -8,13 +8,19 @@
         
         <section id="back_img" class="sr-img"><!--상단 이미지-->
             <article id="back_img_inner">
-                <h3>
-                    <span data-lang-type="kr">통합검색</span>
-                    <span data-lang-type="jp">統合検索</span>
-                    <span data-lang-type="en">Integrated Search</span>
-                </h3>
+                <hgroup>
+                    <p data-search-subtitle>
+                        조선통신사 디지털 아카이브
+                    </p>
+                    <h3>
+                        <span data-lang-type="kr">통합검색</span>
+                        <span data-lang-type="jp">統合検索</span>
+                        <span data-lang-type="en">Integrated Search</span>
+                    </h3>
+                </hgroup>
             </article>
         </section>
+        <%@ include file="/WEB-INF/views/user/page/totalSearch.jsp" %>
         <p class="search-result-notify web-inner-depth">
             "<span class="search-keyword">${searchText }</span>" 검색어에 대한 결과입니다.
         </p>
