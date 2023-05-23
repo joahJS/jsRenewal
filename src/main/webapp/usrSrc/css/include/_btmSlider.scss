@@ -1,74 +1,74 @@
-#btmSlider{
-    height:5.6rem;
-    width:100%;
-    display:flex;
-    background:rgba(var(--white),1);
+#btmSlider {
+    height: 5.6rem;
+    width: 100%;
+    display: flex;
+    background: rgba(var(--white),1);
 
-    .web-common-inner{
-        display:flex;
+    .web-common-inner {
+        display: flex;
         justify-content: space-between;
         align-items: center;
 
-        h2{
-            flex-shrink:0;
-            font-size:var(--font16);
-            width:7rem;
-            text-align:center;
+        h2 {
+            flex-shrink: 0;
+            font-size: var(--font16);
+            width: 7rem;
+            text-align: center;
             letter-spacing: 2px;
-            color: rgba(var(--black),.7);
+            color: rgba(var(--black), .7);
         }
 
-        .common-slider-container{
-            max-width:1140px;
-            padding:0 5rem;
-            position:relative;
+        .common-slider-container {
+            max-width: 1140px;
+            padding: 0 5rem;
+            position: relative;
 
-            .common-bottom-slider{
+            .common-bottom-slider {
                 width: 100%;
                 overflow: hidden;
 
-                .swiper-wrapper{
-                    display:flex;
-                    align-items:center;
+                .swiper-wrapper {
+                    display: flex;
+                    align-items: center;
 
-                    > div{
-                        cursor:pointer;
+                    > div {
+                        cursor: pointer;
                     }
 
-                    img{
-                        height:1.5rem;
+                    img {
+                        height: 1.5rem;
                         margin: 0 auto;
                         object-fit: contain;
 
-                        &.common-slideimg-height{
-                            height:3rem;
+                        &.common-slideimg-height {
+                            height: 3rem;
                         }
 
-                        &.common-slideimg-height02{
-                            height:1.75rem;
+                        &.common-slideimg-height02 {
+                            height: 1.75rem;
                         }
                     }   
                 }
 
-                .swiper-button-prev, .swiper-button-next{
-                    width:1.25rem;
-                    height:1.25rem;
-                    position:absolute;
-                    top:50%;
-                    transform:translateY(-50%);
-                    cursor:pointer;
+                .swiper-button-prev, .swiper-button-next {
+                    width: 1.25rem;
+                    height: 1.25rem;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    cursor: pointer;
                 }
     
-                .swiper-button-prev{
-                    background:url(/common/img/arr_left.svg) no-repeat;
-                    background-size:contain;
-                    left:2rem;
+                .swiper-button-prev {
+                    background: url(/common/img/arr_left.svg) no-repeat;
+                    background-size: contain;
+                    left: 2rem;
                 }
 
-                .swiper-button-next{
-                    background:url(/common/img/arr_right.svg) no-repeat;
-                    background-size:contain;
-                    right:1.5rem;
+                .swiper-button-next {
+                    background: url(/common/img/arr_right.svg) no-repeat;
+                    background-size: contain;
+                    right: 1.5rem;
                 }
     
             }
@@ -80,33 +80,33 @@
 /* btmSlider mediaquery */
 
 @media (max-width: 767px) {
-    #btmSlider{
-        height:5.5rem;
+    #btmSlider {
+        height: 4.5rem;
 
-        .web-common-inner{
+        .web-common-inner {
             flex-direction: column;
             padding: .25rem 0 .25rem;
 
-            .common-slider-container{
-                width:100%;
+            .common-slider-container {
+                width: 100%;
                 padding: 0 3rem;
             }
 
-            h2{
-                font-size:var(--font16);
+            h2 {
+                font-size: var(--font16);
                 font-weight: normal;
                 padding: 0.5rem 0;
             }
         }
     }
-    .common-bottom-slider{
+    .common-bottom-slider {
 
-        .swiper-button-next{
+        .swiper-button-next {
             right: 0.5rem !important;
         }
 
-        .swiper-button-prev{
-            left:.75rem !important;
+        .swiper-button-prev {
+            left: .75rem !important;
         }
     }
     

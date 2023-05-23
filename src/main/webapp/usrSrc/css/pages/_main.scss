@@ -88,11 +88,6 @@
     p {
         font-size: var(--ftUp);
     }
-
-    .span-block {
-        display: inline-block;
-        width: 100%;
-    }
 }  
 
 .main-search-bar {
@@ -295,6 +290,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    overflow: hidden;
 
     &:after {
         content: '';
@@ -516,6 +512,7 @@ ul[data-main-digital-textlist] {
 
 [data-main-digital-item] {
     position: relative;
+    cursor: pointer;
 
     > img {
         width: 100%;
@@ -572,9 +569,6 @@ ul[data-main-digital-textlist] {
 
 
 @media (max-width: 1280px) {
-    body .hd-logo-div {
-        left: 2rem;
-    }
 
     body .hd-search-bar, body [data-nav-exhibition], body nav {
         left: 2rem;
@@ -591,7 +585,9 @@ ul[data-main-digital-textlist] {
 }
 
 @media (max-width: 1024px) {
-    
+    [data-main-digital-texts] {
+        padding: 0 1.2rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -648,10 +644,16 @@ ul[data-main-digital-textlist] {
             text-align: center;
             line-height: 1.15;
         }
+
+        .span-block {
+            display: inline-block;
+            width: 100%;
+        }
     }
 
     .main-search-bar {
         width: 100%;
+        max-width: 19.2rem;
         border: none;
 
         button {
@@ -691,6 +693,47 @@ ul[data-main-digital-textlist] {
     [data-main-intro-texts] {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    [data-main-digital-texts] {
+        h4 {
+            font-size: var(--ftUp);
+        }
+    }
+
+    [data-main-digital-morebutton] {
+        font-size: var(--ftMin);
+    }
+
+    [data-main-digital-item] {
+        display: none;
+
+        &:nth-child(-n+4) {
+            display:block;
+        }
+    }
+
+    #mainDigital {
+        [data-section-head-title] {
+            margin: 4.4rem auto 1.8rem auto;
+        }
+
+        [data-main-digital-list] {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+
+            .tl01, .tl02, .tl03, .tl04-tp {
+                grid-row: auto;
+                grid-column: auto;
+            }
+
+    
+            [data-main-digital-item] {
+                aspect-ratio: 1 / .75;
+                width: 100%;
+            }
+        }
+    }
+    
 
 }
 

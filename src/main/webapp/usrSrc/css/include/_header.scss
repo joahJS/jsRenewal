@@ -268,7 +268,16 @@ nav {
 
     body header.web-common-inner {
         width: 16rem;
-    } 
+    }
+
+    body .hd-logo-div {
+        left: 2rem;
+        gap: .15rem;
+    }
+    
+    header [data-nav-exhibition] {
+        bottom: 5.2rem;
+    }
     
   }
 
@@ -291,7 +300,8 @@ nav {
     }
 }
 
-@media (max-width: 768px) {
+//header 한정 800px break
+@media (max-width: 800px) {
 
     #mobile-burger-button {
         left: .7rem;
@@ -315,7 +325,7 @@ nav {
         }
     }
 
-    [data-nav-exhibition] {
+    header [data-nav-exhibition] {
         bottom: 2.8rem;
     }
 

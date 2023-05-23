@@ -176,14 +176,20 @@ button {
   position: relative;
   background-image: url(/common/img/view_vr_back.jpg);
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
 
+  .web-common-inner {
+    width: 100%;
+    justify-content: center;
+  }
+
   &:after {
     content: '';
     display: block;
-    background-color: rgba(var(--bgBlack), .63);
+    background-color: rgba(61, 33, 33, .72);
     position: absolute;
     top: 0;
     left: 0;
@@ -192,6 +198,7 @@ button {
   }
 
   button {
+    background-color: rgba(var(--bgBlack), .87);
     width: 100%;
     max-width: 30.4rem;
     border: 2px solid rgb(var(--white));
@@ -232,8 +239,11 @@ button {
 @media (max-width: 768px) {
 
   #viewVrEx {
+    height: 6.4rem;
+
     button {
       font-size: var(--ftMain);
+      padding: .6rem 0;
     }
   }
 
