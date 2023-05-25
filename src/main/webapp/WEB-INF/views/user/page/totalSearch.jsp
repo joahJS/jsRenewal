@@ -14,13 +14,13 @@
     
         <!-- <hr class="vf" data-just-deco-hr> -->
     
-        <input type="text" name="totSearch" id="inputSearch" placeholder="Search..." data-tot-input>
+        <input type="text" name="totSearch" id="inputSearch" placeholder="검색어를 입력하세요." data-tot-input>
         <!-- <input type="hidden" id="inputSearch" data-input-text>
     
         <hr class="vf"> -->
     
         <button type="button" id="btnSearch" data-tot-button>
-            <span data-lang-type="kr">찾아보기</span>
+            <span data-lang-type="kr">Search</span>
             <span data-lang-type="jp">けんさく</span>
             <span data-lang-type="en">Search</span>
         </button>

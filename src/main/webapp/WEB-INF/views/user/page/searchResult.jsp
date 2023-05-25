@@ -22,7 +22,16 @@
         </section>
         <%@ include file="/WEB-INF/views/user/page/totalSearch.jsp" %>
         <p class="search-result-notify web-inner-depth">
-            "<span class="search-keyword">${searchText }</span>" 검색어에 대한 결과입니다.
+            "<span class="search-keyword">${searchText }</span>" 
+            <span data-lang-type="kr">
+                검색 결과 (전체 <span data-total-search-cnt>0</span>건)
+            </span>
+            <span data-lang-type="jp">
+                (jp)검색 결과 (전체 <span data-total-search-cnt>0</span>건)
+            </span>
+            <span data-lang-type="en">
+                (en)검색 결과 (전체 <span data-total-search-cnt>0</span>건)
+            </span>
         </p>
         
         
@@ -32,16 +41,22 @@
                 <section id="resultArchive"><!-- 도록 결과 영역 -->
 
                     <h3 class="searchResult-content-title">
-                        <span data-lang-type="kr">기록물 자료</span>
-                        <span data-lang-type="jp">記録資料</span>
-                        <span data-lang-type="en">Archives data</span>
-                        <span class="Small-font">(전체 <span data-ilbook-cnt>0</span>건)</span>
+                        <span data-lang-type="kr">
+                            기록물 자료<span class="Small-font">(전체 <span data-ilbook-cnt>0</span>건)</span>
+                        </span>
+                        <span data-lang-type="jp">
+                            記録資料<span class="Small-font">(전체 <span data-ilbook-cnt>0</span>건)</span>
+                        </span>
+                        <span data-lang-type="en">
+                            Archives data<span class="Small-font">(전체 <span data-ilbook-cnt>0</span>건)</span>
+                        </span>
+                        
                     </h3>
 					
 					<div data-ilbook-list>
 					</div>
-					
-                    <!-- <div class="categoricalArc-content-box">반복영역
+                    <!-- 반복영역 -->
+                    <div class="categoricalArc-content-box"> 
                         <h3 class="categoricalArc-item-title">
                             <span data-lang-type="kr">기록물 검색결과 01</span>
                             <span data-lang-type="jp">(jp)けっか</span>
@@ -64,22 +79,30 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="27"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 12l-6 6V6z"/></svg>
                             </button>
                         </div>
-                    </div> --><!--반복영역-->
+                    </div>
+                    <!--반복영역-->
                 </section>
                 <section id="resultsearchResult"><!-- 디지털소장자료 결과 영역 -->
 
                     <h3 class="searchResult-content-title">
-                        <span data-lang-type="kr">디지털 소장 자료</span>
-                        <span data-lang-type="jp">デジタルコレクション</span>
-                        <span data-lang-type="en">Digital Collection</span>
-                        <span class="Small-font">(전체 <span data-clt-data-cnt>0</span>건)</span>
+                        <span data-lang-type="kr">
+                            디지털 소장 자료<span class="Small-font">(전체 <span data-clt-data-cnt>0</span>건)</span>
+                        </span>
+                        <span data-lang-type="jp">
+                            デジタルコレクション<span class="Small-font">(전체 <span data-clt-data-cnt>0</span>건)</span>
+                        </span>
+                        <span data-lang-type="en">
+                            Digital Collection<span class="Small-font">(전체 <span data-clt-data-cnt>0</span>건)</span>
+                        </span>
+                        
                     </h3>
                     
                     <div data-clt-data-list>
                     
                     </div>
 
-                    <!-- <div class="searchResult-content-box">반복영역
+                    <!-- 반복영역 -->
+                    <div class="searchResult-content-box">
                         <div class="searchResult-content-img">
                             <img src="#">
                         </div>
@@ -121,7 +144,8 @@
                                 <span data-lang-type="en">show digital collection data</span>
                             </button>
                         </div>
-                    </div> --><!--반복영역-->
+                    </div>
+                    <!-- 반복영역 -->
                 </section>
    
         </article>

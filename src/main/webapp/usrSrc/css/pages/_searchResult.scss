@@ -6,10 +6,8 @@
 }
 
 .search-result-notify{
-    margin: 4rem auto 1.5rem auto;
-    font-size: var(--font18);
-    border-bottom: 1px solid rgba(var(--black),.15);
-    padding-bottom: 1rem;
+    margin: 2.4rem auto 5rem auto;
+    font-size: var(--ftTitleM);
 }
 
 [data-search-subtitle] {
@@ -42,8 +40,7 @@
 }
 
 .searchResult-content-title{
-    font-size: var(--font28);
-    color: rgba(var(--royalblue), 1);
+    font-size: var(--ftTitleM);
     font-weight: bold;
     margin-bottom:1rem;
 }

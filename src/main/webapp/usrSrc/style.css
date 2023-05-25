@@ -1591,10 +1591,8 @@ ul[data-main-digital-textlist] li:first-child:before {
 }
 
 .search-result-notify {
-  margin: 4rem auto 1.5rem auto;
-  font-size: var(--font18);
-  border-bottom: 1px solid rgba(var(--black), 0.15);
-  padding-bottom: 1rem;
+  margin: 2.4rem auto 5rem auto;
+  font-size: var(--ftTitleM);
 }
 
 [data-search-subtitle] {
@@ -1624,8 +1622,7 @@ ul[data-main-digital-textlist] li:first-child:before {
 }
 
 .searchResult-content-title {
-  font-size: var(--font28);
-  color: rgba(var(--royalblue), 1);
+  font-size: var(--ftTitleM);
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -2045,13 +2042,7 @@ nav li a span {
   width: 100%;
   height: 3.2rem;
   margin: 0 auto;
-  filter: drop-shadow(3px 0 8px rgba(var(--bgBlack), 0.15));
-}
-#totalSearch:not(:has(:-moz-placeholder-shown)) {
-  background-color: rgba(var(--white), 1);
-}
-#totalSearch:not(:has(:placeholder-shown)) {
-  background-color: rgba(var(--white), 1);
+  filter: drop-shadow(3px 5px 8px rgba(var(--bgBlack), 0.25));
 }
 #totalSearch > hr {
   height: 0.8rem;
@@ -2060,10 +2051,11 @@ nav li a span {
 #totalSearch #inputSearch {
   flex: 1 1 auto;
   outline: 0;
-  padding: 0.8rem 0.8rem 0.8rem 3.5rem;
+  padding: 0.8rem 0.8rem 0.8rem 5rem;
   background-color: rgb(var(--white));
   background-image: url(/common/img/search-line.svg);
   background-position: 1.5rem center;
+  background-size: 1.8rem;
   background-repeat: no-repeat;
   border-radius: 0.5rem 0 0 0.5rem;
   width: 100%;
@@ -2080,11 +2072,6 @@ nav li a span {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#totalSearch:focus-within {
-  border-color: rgba(var(--royalblue), 0.3);
-  box-shadow: 0 0 0 0.15rem rgba(var(--royalblue), 0.1);
-  background-color: rgba(var(--white), 1);
 }
 
 #slctFilter {
